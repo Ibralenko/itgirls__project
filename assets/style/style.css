@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     color: white;
@@ -23,27 +23,27 @@ img {
 }
 
 p {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
-    color: #B8B8B8;
+    color: #b8b8b8;
 }
 
 .general-subtitle {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
-    color: #B8B8B8;
+    color: #b8b8b8;
 }
 
 .general-button {
     width: 164px;
     height: 48px;
-    background: #FFB577;
+    background: #ffb577;
 }
 
 /*  header styles start (Julia)*/
@@ -56,14 +56,15 @@ p {
     height: 80px;
 }
 
-.header__logo {
-    Width: 96px;
-    Height: 19.42px;
+.header__logo-pic {
+    width: 96px;
+    height: 19.42px;
 }
 
 .wrapper {
     max-width: 1278px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .header__left-part {
@@ -88,22 +89,21 @@ p {
 }
 
 .header__link {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     text-transform: capitalize;
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
 }
 
 .header__link:hover,
 .header__link:focus,
 .header__link:active {
-    opacity: .75;
+    opacity: 0.75;
 }
-
 
 .right-link {
     display: inline-block;
@@ -112,7 +112,7 @@ p {
     color: rgba(255, 196, 146, 1);
     text-decoration: none;
     background: url(/assets/img/svg/right-arrow.svg) no-repeat 95% center;
-    transition: .2s all;
+    transition: 0.2s all;
 }
 
 /* header  styles end */
@@ -120,7 +120,6 @@ p {
 /*hero styles start (Julia)*/
 .hero {
     margin-bottom: 160px;
-
 }
 
 .hero__container {
@@ -134,14 +133,13 @@ p {
 }
 
 .hero__title {
-    max-width: 624px;
-    height: 136px;
-    font-family: 'Playfair Display';
+    max-height: 136px;
+    font-family: "Playfair Display";
     font-style: normal;
     font-weight: 700;
     font-size: 56px;
     line-height: 68px;
-    color: #FFFFFF;
+    color: #ffffff;
     opacity: 0.87;
     margin-bottom: 16px;
 }
@@ -152,10 +150,19 @@ p {
     margin-bottom: 32px;
 }
 
+.hero__btn {
+    margin-bottom: 40px;
+}
+
 .sm-text {
     font-size: 20px;
     line-height: 30px;
     height: 30px;
+    margin-bottom: -15px;
+}
+
+.hero__text {
+    margin-bottom: 16px;
 }
 
 .hero__image {
@@ -163,28 +170,74 @@ p {
     height: 683px;
 }
 
+@media screen and (max-width: 960px) {
+    .hero__container {
+        display: block;
+    }
+
+    .hero__title {
+        font-size: 50px;
+        max-width: 700px;
+    }
+
+    .hero__left-part,
+    .hero__right-part {
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .hero__subtitle {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero__title {
+        font-size: 30px;
+    }
+
+    .hero__subtitle {
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hero__title {
+        font-size: 25px;
+    }
+
+    .hero__subtitle {
+        margin-bottom: 100px;
+    }
+
+    .hero__image {
+        display: none;
+    }
+
+}
+
 /*hero styles end*/
 
 /* About company styles start (Julia) */
 .about-company__title {
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display";
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 58px;
-    color: #FFFFFF;
+    color: #ffffff;
     max-width: 613px;
     margin-bottom: 32px;
-
 }
 
 .about-company__column-title {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
-    color: #C4E4EA;
+    color: #c4e4ea;
 }
 
 .about-company__column-title::before {
@@ -212,7 +265,7 @@ p {
 .about-company__btn {
     width: 164px;
     height: 48px;
-    background: #FFB577;
+    background: #ffb577;
 }
 
 .about-company__btn::after {
