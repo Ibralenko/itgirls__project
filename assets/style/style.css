@@ -31,19 +31,16 @@ p {
     color: #b8b8b8;
 }
 
-.general-subtitle {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
-    color: #b8b8b8;
-}
-
 .general-button {
     width: 164px;
     height: 48px;
     background: #ffb577;
+}
+
+.general-button:hover,
+.general-button:focus,
+.general-button:active {
+    opacity: 0.75;
 }
 
 /*  header styles start (Julia)*/
@@ -54,6 +51,11 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
     height: 80px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
 }
 
 .header__logo-pic {
@@ -220,6 +222,43 @@ p {
 /*hero styles end*/
 
 /* About company styles start (Julia) */
+
+.about-company {
+    margin-bottom: 160px;
+    display: flex;
+}
+
+.about-company__left {
+    margin-right: 102px;
+}
+
+.about-company__link {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFB577;
+    text-decoration: none;
+}
+
+.about-company__link::after {
+    content: '';
+    background-color: rgba(255, 255, 255, 1);
+    height: 1px;
+    width: 48px;
+    display: inline;
+    /* margin-right: 16px; */
+}
+
+.about-company__columns {
+    margin-right: 32px;
+}
+
+.about-company__columns:last-child {
+    margin-right: 0px;
+}
+
 .about-company__title {
     font-family: "Playfair Display";
     font-style: normal;
@@ -238,6 +277,7 @@ p {
     font-size: 24px;
     line-height: 36px;
     color: #c4e4ea;
+    margin-bottom: -20px;
 }
 
 .about-company__column-title::before {
@@ -249,8 +289,24 @@ p {
     max-width: 624px;
 }
 
-.about-company__left {
+.second-part {
+    margin-bottom: 32px;
+}
+
+.about-company__right {
+    max-height: 700px;
     max-width: 613px;
+    position: relative;
+}
+
+.about-company__img-1 {
+    position: absolute;
+    margin-top: 0;
+}
+
+.about-company__img-2 {
+    position: absolute;
+    left: 0;
 }
 
 .about-company__container {
@@ -259,7 +315,7 @@ p {
 }
 
 .about-company__column-subtitle {
-    max-width: 112px;
+    max-width: 187px;
 }
 
 .about-company__btn {
