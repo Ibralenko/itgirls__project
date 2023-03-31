@@ -170,6 +170,12 @@ img {
 /*hero styles start (Julia)*/
 .hero__container {
     display: flex;
+    margin-top: 96px;
+}
+
+.hero__left-part {
+    max-width: 624px;
+    margin-right: 32px;
 }
 
 .hero__title {
@@ -188,12 +194,6 @@ img {
 .hero__subtitle {
     max-width: 624px;
     height: 56px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
-    color: #B8B8B8;
     margin-bottom: 32px;
 }
 
@@ -212,13 +212,24 @@ img {
 
 /* About company styles start (Julia) */
 
-.about-company__title {
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 58px;
-    color: #FFFFFF;
+.about-company__title {}
+
+.about-company__subtitle {
+    max-width: 624px;
+}
+
+.about-company__left {
+    max-width: 613px;
+}
+
+.about-company__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-company__column-subtitle {
+    max-width: 112px;
+
 }
 
 
