@@ -87,7 +87,16 @@ img {
     height: auto;
 }
 
-/*  header styles start*/
+.general-subtitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #B8B8B8;
+}
+
+/*  header styles start (Julia)*/
 
 .header {
     display: flex;
@@ -157,3 +166,60 @@ img {
 }
 
 /* header  styles end */
+
+/*hero styles start (Julia)*/
+.hero__container {
+    display: flex;
+}
+
+.hero__title {
+    max-width: 624px;
+    height: 136px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 68px;
+    color: #FFFFFF;
+    opacity: 0.87;
+    margin-bottom: 16px;
+}
+
+.hero__subtitle {
+    max-width: 624px;
+    height: 56px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #B8B8B8;
+    margin-bottom: 32px;
+}
+
+.sm-text {
+    font-size: 20px;
+    line-height: 30px;
+    height: 30px;
+}
+
+.hero__image {
+    width: 622px;
+    height: 683px;
+}
+
+/*hero styles end*/
+
+/* About company styles start (Julia) */
+
+.about-company__title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+}
+
+
+/* About company styles end (Julia) */
