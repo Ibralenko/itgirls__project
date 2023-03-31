@@ -1,68 +1,3 @@
-/* playfair-display-regular - latin */
-@font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/playfair-display-v30-latin-regular.woff2') format('woff2'),
-        /* Chrome 36+, Opera 23+, Firefox 39+ */
-        url('../fonts/playfair-display-v30-latin-regular.woff') format('woff');
-    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* playfair-display-500 - latin */
-@font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../fonts/playfair-display-v30-latin-500.woff2') format('woff2'),
-        /* Chrome 36+, Opera 23+, Firefox 39+ */
-        url('../fonts/playfair-display-v30-latin-500.woff') format('woff');
-    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* playfair-display-700 - latin */
-@font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/playfair-display-v30-latin-700.woff2') format('woff2'),
-        /* Chrome 36+, Opera 23+, Firefox 39+ */
-        url('../fonts/playfair-display-v30-latin-700.woff') format('woff');
-    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* poppins-regular - latin */
-@font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'),
-        /* Chrome 36+, Opera 23+, Firefox 39+ */
-        url('../fonts/poppins-v20-latin-regular.woff') format('woff');
-    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* poppins-500 - latin */
-@font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2'),
-        /* Chrome 36+, Opera 23+, Firefox 39+ */
-        url('../fonts/poppins-v20-latin-500.woff') format('woff');
-    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
 html {
     box-sizing: border-box;
 }
@@ -87,6 +22,15 @@ img {
     height: auto;
 }
 
+p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #B8B8B8;
+}
+
 .general-subtitle {
     font-family: 'Poppins';
     font-style: normal;
@@ -94,6 +38,12 @@ img {
     font-size: 16px;
     line-height: 28px;
     color: #B8B8B8;
+}
+
+.general-button {
+    width: 164px;
+    height: 48px;
+    background: #FFB577;
 }
 
 /*  header styles start (Julia)*/
@@ -168,6 +118,11 @@ img {
 /* header  styles end */
 
 /*hero styles start (Julia)*/
+.hero {
+    margin-bottom: 160px;
+
+}
+
 .hero__container {
     display: flex;
     margin-top: 96px;
@@ -211,8 +166,31 @@ img {
 /*hero styles end*/
 
 /* About company styles start (Julia) */
+.about-company__title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+    max-width: 613px;
+    margin-bottom: 32px;
 
-.about-company__title {}
+}
+
+.about-company__column-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #C4E4EA;
+}
+
+.about-company__column-title::before {
+    content: url(/assets/img/svg/column-ico.svg);
+    margin-right: 7px;
+}
 
 .about-company__subtitle {
     max-width: 624px;
@@ -229,8 +207,17 @@ img {
 
 .about-company__column-subtitle {
     max-width: 112px;
-
 }
 
+.about-company__btn {
+    width: 164px;
+    height: 48px;
+    background: #FFB577;
+}
+
+.about-company__btn::after {
+    content: url(/assets/img/svg/Arrow-black.svg);
+    margin-left: 9px;
+}
 
 /* About company styles end (Julia) */
