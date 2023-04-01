@@ -35,6 +35,7 @@ p {
     width: 164px;
     height: 48px;
     background: #ffb577;
+    border: #FFB577;
 }
 
 .general-button:hover,
@@ -115,6 +116,12 @@ p {
     text-decoration: none;
     background: url(/assets/img/svg/right-arrow.svg) no-repeat 95% center;
     transition: 0.2s all;
+}
+
+@media screen and (min-width:320px) {
+    .header__burger-menu {
+        display: none;
+    }
 }
 
 /* header  styles end */
@@ -255,10 +262,6 @@ p {
     margin-right: 32px;
 }
 
-.about-company__columns:last-child {
-    margin-right: 0px;
-}
-
 .about-company__title {
     font-family: "Playfair Display";
     font-style: normal;
@@ -299,14 +302,20 @@ p {
     position: relative;
 }
 
-.about-company__img-1 {
-    position: absolute;
-    margin-top: 0;
-}
-
 .about-company__img-2 {
     position: absolute;
-    left: 0;
+    width: 240px;
+    height: 500px;
+    right: -250px;
+    top: 0px;
+    border-radius: 0px;
+    margin-bottom: 67px;
+}
+
+.about-company__img-1 {
+    Width: 240px;
+    Height: 500px;
+    margin-top: 81px;
 }
 
 .about-company__container {
