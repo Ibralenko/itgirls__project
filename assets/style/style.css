@@ -339,3 +339,61 @@ p {
 }
 
 /* About company styles end (Julia) */
+
+
+/*Part with Video (Mila)*/
+.quote__wrapper {
+    display: flex;
+
+}
+.quote__left-part{
+    margin-left: 160px;
+    margin-right: 78px;
+    max-width: 674px;
+    max-height: 668px;
+}
+.quote__marks-sign {
+    max-width: 34px;
+    max-width: 35px;
+    font-family: 'Gilroy-Bold';
+    font-size: 72px;
+    font-weight: normal;
+    line-height: 128%;
+    color: #FFFFFF;
+    margin-bottom: 43px;
+}
+.quote__text-words {
+    max-width: 436px;
+    max-height: 288px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: #FFFFFF;
+    opacity: 0.87;
+
+}
+.quote__person {
+    display: flex;
+    justify-content: space-between;
+}
+.quote__person-name,
+.quote__person-place {
+    margin: 0;
+}
+.quote__person-name {
+    max-width: 113px;
+    max-height: 24px;
+}
+.quote__right-part {
+    max-width: 925px;
+    max-height: 668px;
+    position: relative;
+}
+
+.quote__right-part-poster {
+    position: absolute;
+    top: 48%;
+    left: 48%;
+}
