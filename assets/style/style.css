@@ -344,6 +344,7 @@ p {
 /*Part with Video (Mila)*/
 .quote__wrapper {
     display: flex;
+    justify-content: center;
 
 }
 .quote__left-part{
@@ -378,9 +379,8 @@ p {
     display: flex;
     justify-content: space-between;
 }
-.quote__person-text {
 
-}
+
 .quote__person-face {
     border-bottom: 2px solid white;
 }
