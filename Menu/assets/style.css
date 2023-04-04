@@ -168,7 +168,7 @@ p {
         width: 26px;
         height: 26px;
         cursor: pointer;
-        z-index: 11;
+        z-index: 1;
     }
 
     .menu__btn>span,
@@ -205,7 +205,6 @@ p {
         background-color: rgba(25, 22, 27, 1);
         box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
         transition-duration: .25s;
-        z-index: 10;
     }
 
     .menu__item {
@@ -218,7 +217,6 @@ p {
         text-decoration: none;
         text-align: center;
         transition-duration: .25s;
-        z-index: 9;
     }
 
     .right-link {
@@ -235,7 +233,8 @@ p {
 
 /* header  styles end */
 
-/* hero styles start (Julia) */
+/* hero styles start (Julia)*/
+
 .hero {
     margin-bottom: 160px;
 }
@@ -288,17 +287,13 @@ p {
     height: 683px;
 }
 
-@media (max-width: 940px) {
-    .wrapper {
-        max-width: 900px;
-    }
-
+@media screen and (max-width: 960px) {
     .hero__container {
         display: block;
     }
 
     .hero__title {
-        font-size: 40px;
+        font-size: 50px;
         max-width: 700px;
     }
 
@@ -310,12 +305,7 @@ p {
     }
 
     .hero__subtitle {
-        font-size: 15px;
         margin-left: 10%;
-    }
-
-    .hero__subtitle:last-child {
-        margin-left: 5%;
     }
 }
 
@@ -326,10 +316,6 @@ p {
 
     .hero__subtitle {
         margin-bottom: 80px;
-    }
-
-    .hero__subtitle:last-child {
-        margin-left: 0px;
     }
 }
 
@@ -345,263 +331,4 @@ p {
     .hero__image {
         display: none;
     }
-
 }
-
-/*hero styles end*/
-
-/* About company styles start (Julia) */
-
-.about-company {
-    margin-bottom: 160px;
-    display: flex;
-}
-
-.about-company__left {
-    margin-right: 102px;
-}
-
-.about-company__link {
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFB577;
-    text-decoration: none;
-    margin-bottom: 24px;
-    position: relative;
-}
-
-.about-company__link::after {
-    content: url(/assets/img/svg/Line.svg);
-    position: absolute;
-    right: -64px;
-    top: -6px;
-
-}
-
-.about-company__columns {
-    margin-right: 32px;
-}
-
-.about-company__title {
-    font-family: "Playfair Display";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 58px;
-    color: #ffffff;
-    max-width: 613px;
-    margin-bottom: 32px;
-}
-
-.about-company__column-title {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
-    color: #c4e4ea;
-    margin-bottom: -20px;
-}
-
-.about-company__column-title::before {
-    content: url(/assets/img/svg/column-ico.svg);
-    margin-right: 7px;
-}
-
-.about-company__subtitle {
-    max-width: 624px;
-}
-
-.second-part {
-    margin-bottom: 32px;
-}
-
-.about-company__right {
-    max-height: 700px;
-    max-width: 613px;
-    position: relative;
-}
-
-.about-company__img-2 {
-    position: absolute;
-    width: 240px;
-    height: 500px;
-    right: -270px;
-    top: 0px;
-    border-radius: 0px;
-    margin-bottom: 67px;
-}
-
-.about-company__img-1 {
-    Width: 240px;
-    Height: 500px;
-    margin-top: 81px;
-    margin-left: -10px;
-}
-
-.about-company__container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.about-company__column-subtitle {
-    max-width: 187px;
-}
-
-.about-company__btn {
-    width: 164px;
-    height: 48px;
-    background: #ffb577;
-}
-
-.about-company__btn::after {
-    content: url(/assets/img/svg/Arrow-black.svg);
-    margin-left: 9px;
-}
-
-<<<<<<< HEAD
-*/
-/* About company styles end (Julia) */
-=======
-/* About company styles end (Julia) */
-
-
-
-
-/* What we are serving styles start (Gulya) */
-.about__header {
-    display: flex;
-    align-items: center;
-   
-
-}
-
-.about__main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 120px;
-    
-}
-   
-
-
-.about__logo {
-    width: 48px;
-    height: 48px;
-}
-
-.about {
-    margin-left: 20px;
-    
-}
-
-.about__header_block1 {
-    margin-right: 30px;
-    width: 50%;
-}
-
-.about__header_block2 {
-margin-right: 30px;
-width: 50%;
-
-}
-.about__heaad_title {
-    font-family: "Playfair Display";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 58px;
-    color: #ffffff;
-
-}
-
-
-/* What we are serving styles end (Gulya) */
-
-
-
-/* Our menu styles start (Gulya) */
-.menu__main {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr;
-}
-
-/* Our menu styles end (Gulya) */
-
-
-
-
-
-
-/*Part with Video (Mila)*/
-.quote__wrapper {
-    display: flex;
-    justify-content: center;
-
-}
-.quote__left-part{
-    margin-left: 160px;
-    margin-right: 78px;
-    max-width: 674px;
-    max-height: 668px;
-}
-.quote__marks-sign {
-    max-width: 34px;
-    max-width: 35px;
-    font-family:'Poppins', sans-serif;
-    font-size: 72px;
-    font-weight: normal;
-    line-height: 128%;
-    color: #FFFFFF;
-    margin-bottom: 43px;
-}
-.quote__text-words {
-    max-width: 436px;
-    max-height: 288px;
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 48px;
-    color: #FFFFFF;
-    opacity: 0.87;
-
-}
-.quote__person {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.quote__person-face {
-    border-bottom: 2px solid white;
-}
-.quote__person-name,
-.quote__person-place {
-    margin: 0;
-
-}
-.quote__person-name {
-    max-width: 113px;
-    max-height: 24px;
-}
-.quote__person-place {
-    opacity: 0.6;
-}
-.quote__right-part {
-    max-width: 925px;
-    max-height: 668px;
-    position: relative;
-}
-
-.quote__right-part-poster {
-    position: absolute;
-    top: 48%;
-    left: 48%;
-}
->>>>>>> c345ea99c229836de08ec53886f1e157e6c3904f
