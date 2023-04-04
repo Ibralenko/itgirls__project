@@ -471,7 +471,7 @@ p {
     margin-left: 9px;
 }
 
-*/
+
 @media (min-width: 950px) {
     .about-company__right {
         display: none;
@@ -578,8 +578,6 @@ p {
 
 
 
-<<<<<<< HEAD
-=======
 .about__logo {
     width: 48px;
     height: 48px;
@@ -612,7 +610,6 @@ p {
 }
 
 
->>>>>>> a04d93d7f7bcb59060d11c939fea5798f9d6c97a
 /* What we are serving styles end (Gulya) */
 
 
