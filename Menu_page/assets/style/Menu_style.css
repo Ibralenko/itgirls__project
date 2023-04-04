@@ -230,7 +230,41 @@ p {
     }
 }
 
-.Our-Menu__link {
+/* =============== section */
+.Our-Menu {
+    display: flex;
+}
+
+.Our-Menu__title {
+    height: 136px;
+    max-width: 643px;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 68px;
+    color: #ffffff;
+    margin-bottom: 144px;
+}
+
+.Our-Menu__subtitle {
+    max-height: 112px;
+    max-width: 499px;
+}
+
+.Our-Menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+}
+
+.Our-Menu__item {
+    list-style-type: none;
+    margin-right: 40px;
+}
+
+.Our-Menu__main-link {
+    margin-right: 32px;
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 400;
@@ -242,10 +276,57 @@ p {
     position: relative;
 }
 
-.Our-Menu__link::after {
+.Our-Menu__main-link::after {
     content: url(/assets/img/svg/Line.svg);
     position: absolute;
     right: -64px;
     top: -6px;
+}
 
+.Our-Menu__link {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+.Our-Menu__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 406px);
+    grid-gap: 32px;
+    grid-template-rows: repeat(4, 351px);
+}
+
+.Our-Menu__card-pic {
+    width: 405px;
+    height: 271px;
+    position: relative;
+}
+
+.Our-Menu__info {
+    position: absolute;
+    bottom: -78px;
+    left: 0;
+    width: 405px;
+    height: 80px;
+    background-color: #1F1D21;
+}
+
+.Our-Menu__info-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Our-Menu__title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    opacity: 0.87;
 }
