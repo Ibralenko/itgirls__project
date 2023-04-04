@@ -235,7 +235,7 @@ p {
     display: flex;
 }
 
-.Our-Menu__title {
+.Our-Menu__main-title {
     height: 136px;
     max-width: 643px;
     font-family: "Playfair Display";
@@ -245,6 +245,7 @@ p {
     line-height: 68px;
     color: #ffffff;
     margin-bottom: 144px;
+    margin-right: 75px;
 }
 
 .Our-Menu__subtitle {
