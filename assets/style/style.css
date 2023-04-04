@@ -471,6 +471,7 @@ p {
     margin-left: 9px;
 }
 
+*/
 @media (min-width: 950px) {
     .about-company__right {
         display: none;
@@ -502,11 +503,72 @@ p {
 .about__header {
     display: flex;
     align-items: center;
-
-
 }
 
-.about__main {
+
+
+
+
+
+.what__logo {
+    width: 48px;
+    height: 48px;
+}
+
+.what {
+    margin-left: 20px;
+    
+    
+}
+
+.what__header_block1 {
+    margin-right: 30px;
+    width: 50%;
+ 
+}
+
+.what__header_block2 {
+    
+  width: 50%;
+  margin-right: 50px;
+    
+    }
+
+
+.what__header_title {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #ffffff;
+}
+
+.what__container {
+    display: flex;
+}
+
+.what__link {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFB577;
+    text-decoration: none;
+    margin-bottom: 24px;
+    position: relative; 
+    margin-right: 10px;
+}
+
+.what__header {
+    
+    display: flex;
+    align-items: center;
+}
+
+
+.what__main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -516,6 +578,8 @@ p {
 
 
 
+<<<<<<< HEAD
+=======
 .about__logo {
     width: 48px;
     height: 48px;
@@ -548,17 +612,87 @@ p {
 }
 
 
+>>>>>>> a04d93d7f7bcb59060d11c939fea5798f9d6c97a
 /* What we are serving styles end (Gulya) */
 
 
 
 /* Our menu styles start (Gulya) */
+
+.menu {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10%;
+}
 .menu__main {
-    display: grid;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+grid-gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
+.menu__container {
+    display: flex;
+}
+
+.menu__link {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFB577;
+    text-decoration: none;
+    margin-bottom: 24px;
+    position: relative; 
+    margin-right: 10px;
+   
+}
+
+.menu__header {
+    display: flex;
+    align-items: center;
+}
+
+.menu__header_block1 {
+    width: 50% ;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+  
+    color: #ffffff;
+}
+.menu__header_block2 {
+    width: 50%;
+}
+
+.menu__container {
+    display: flex;
+   
+}
+.menu_button {
+    display: flex;
+    align-items: center;
+    width: 164px;
+    height: 48px;
+    background-color: #ffb577;
+    color:black;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-block: 3rem;
+    cursor: pointer;
+    
+}
+
+
+.button_services__body:hover {
+  background-color: #ffb577;
+  border: #ffb577;
+}
 /* Our menu styles end (Gulya) */
 
 
@@ -640,3 +774,4 @@ p {
     top: 48%;
     left: 48%;
 }
+
