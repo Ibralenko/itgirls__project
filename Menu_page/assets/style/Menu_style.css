@@ -229,3 +229,23 @@ p {
         background-color: #e1975b;
     }
 }
+
+.Our-Menu__link {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFB577;
+    text-decoration: none;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.Our-Menu__link::after {
+    content: url(/assets/img/svg/Line.svg);
+    position: absolute;
+    right: -64px;
+    top: -6px;
+
+}

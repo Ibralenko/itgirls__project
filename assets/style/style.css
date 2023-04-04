@@ -44,6 +44,12 @@ p {
     opacity: 0.75;
 }
 
+.wrapper {
+    max-width: 1278px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 /*  header styles start (Julia)*/
 
 
@@ -496,7 +502,7 @@ p {
 .about__header {
     display: flex;
     align-items: center;
-   
+
 
 }
 
@@ -505,9 +511,9 @@ p {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 120px;
-    
+
 }
-   
+
 
 
 .about__logo {
@@ -517,7 +523,7 @@ p {
 
 .about {
     margin-left: 20px;
-    
+
 }
 
 .about__header_block1 {
@@ -526,10 +532,11 @@ p {
 }
 
 .about__header_block2 {
-margin-right: 30px;
-width: 50%;
+    margin-right: 30px;
+    width: 50%;
 
 }
+
 .about__heaad_title {
     font-family: "Playfair Display";
     font-style: normal;
@@ -547,9 +554,9 @@ width: 50%;
 
 /* Our menu styles start (Gulya) */
 .menu__main {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 /* Our menu styles end (Gulya) */
