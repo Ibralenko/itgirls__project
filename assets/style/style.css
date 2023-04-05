@@ -716,27 +716,20 @@ p {
     margin: 0 auto;
     margin-top: 3rem;
     margin-block: 3rem;
-<<<<<<< HEAD
     cursor: pointer;
-
-=======
-  
-    
->>>>>>> 5e8210f39f199971c818db4233690942f5318d6c
 }
+
 .menu_button:hover,
 .menu_button:focus,
 .menu_button:active {
     opacity: 0.75;
 }
+
 .button_services__body:hover {
-<<<<<<< HEAD
     background-color: #ffb577;
     border: #ffb577;
-=======
-  background-color: #ecc19e;
-  border: #ffb577;
->>>>>>> 5e8210f39f199971c818db4233690942f5318d6c
+    background-color: #ecc19e;
+    border: #ffb577;
 }
 
 /* Our menu styles end (Gulya) */
@@ -819,4 +812,51 @@ p {
     position: absolute;
     top: 48%;
     left: 48%;
+}
+
+/* About blog (Nadya) */
+.blog__title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.blog {
+    display: grid;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: space-between;
+    gap: 32px;
+}
+
+.item1__date,
+.item2__date,
+.item3__date,
+.item1__about,
+.item2__about,
+.item3__about {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #B8B8B8;
+}
+
+.item1,
+.item2,
+.item3 {
+    background-color: #1F1D21;
+    ;
+}
+
+.blog__image {
+    width: 405px;
+    height: 234px;
+
 }
