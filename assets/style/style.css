@@ -36,6 +36,7 @@ p {
     height: 48px;
     background: #ffb577;
     border: #FFB577;
+    cursor: pointer;
 }
 
 .general-button:hover,
@@ -276,6 +277,11 @@ p {
 
 .hero__btn {
     margin-bottom: 40px;
+}
+
+.hero__btn::after {
+    content: url(/assets/img/svg/Arrow-black.svg);
+    margin-left: 9px;
 }
 
 .sm-text {
