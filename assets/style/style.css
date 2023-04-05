@@ -36,6 +36,7 @@ p {
     height: 48px;
     background: #ffb577;
     border: #FFB577;
+    cursor: pointer;
 }
 
 .general-button:hover,
@@ -278,6 +279,11 @@ p {
     margin-bottom: 40px;
 }
 
+.hero__btn::after {
+    content: url(/assets/img/svg/Arrow-black.svg);
+    margin-left: 9px;
+}
+
 .sm-text {
     font-size: 20px;
     line-height: 30px;
@@ -295,6 +301,10 @@ p {
 }
 
 @media (max-width: 950px) {
+    .hero__left-part {
+        text-align: center;
+    }
+
     .hero__container {
         display: flex;
         align-items: center;
@@ -323,8 +333,16 @@ p {
 }
 
 @media screen and (max-width: 576px) {
+    .hero__left-part {
+        max-width: 350px;
+    }
+
     .hero__title {
         font-size: 30px;
+    }
+
+    .hero__left-part {
+        text-align: center;
     }
 
     .hero__subtitle {
@@ -337,6 +355,9 @@ p {
 }
 
 @media screen and (max-width: 325px) {
+    .hero__left-part {
+        text-align: center;
+    }
 
     .hero__left-part,
     .hero__right-part {
@@ -472,15 +493,37 @@ p {
 }
 
 
-@media (min-width: 950px) {
-    .about-company__right {
-        display: none;
+@media (max-width: 960px) {
+    .about-company {
+        display: block;
     }
 
+    .about-company__img-1 {
+        Width: 240px;
+        Height: 500px;
+        margin-top: 81px;
+        margin-left: 60px;
+    }
+
+    .about-company__img-2 {
+        position: absolute;
+        width: 240px;
+        height: 500px;
+        right: -70px;
+        top: 50px;
+        border-radius: 0px;
+        margin-bottom: 67px;
+    }
+
+    .about-company__left {
+        text-align: center;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 576px) {
     .about-company__left {
+        text-align: center;
         margin: auto;
     }
 
@@ -489,14 +532,19 @@ p {
     }
 }
 
-@media screen and (max-width: 325px) {}
+@media screen and (max-width: 325px) {
+    .about-company__left {
+        text-align: center;
+        margin: auto;
+        margin-right: 10px;
+    }
 
-
+    .about-company__right {
+        display: none;
+    }
+}
 
 /* About company styles end (Julia) */
-/* About company styles end (Julia) */
-
-
 
 
 /* What we are serving styles start (Gulya) */
@@ -514,25 +562,18 @@ p {
 
 .what {
     margin-left: 20px;
-    
-    
 }
 
 .what__header_block1 {
     margin-right: 30px;
     width: 50%;
- 
+
 }
 
 .what__header_block2 {
-    
-  width: 50%;
-  margin-right: 50px;
-    
-    }
-    .what__wrapper {
-        width: 100%;
-    }
+    width: 50%;
+    margin-right: 50px;
+}
 
 .what__header_title {
     font-family: "Playfair Display";
@@ -556,12 +597,11 @@ p {
     color: #FFB577;
     text-decoration: none;
     margin-bottom: 24px;
-    position: relative; 
+    position: relative;
     margin-right: 10px;
 }
 
 .what__header {
-    
     display: flex;
     align-items: center;
 }
@@ -690,9 +730,9 @@ grid-gap: 30px;
     color: #FFB577;
     text-decoration: none;
     margin-bottom: 24px;
-    position: relative; 
+    position: relative;
     margin-right: 10px;
-   
+
 }
 
 .menu__header {
@@ -701,14 +741,14 @@ grid-gap: 30px;
 }
 
 .menu__header_block1 {
-    width: 50% ;
+    width: 50%;
     font-family: "Playfair Display";
     font-style: normal;
     font-weight: 500;
     font-size: 35px;
-  
     color: #ffffff;
 }
+
 .menu__header_block2 {
     width: 50%;
 }
@@ -718,28 +758,36 @@ grid-gap: 30px;
     width: 100%;
    
 }
+
 .menu_button {
     display: flex;
     align-items: center;
     width: 164px;
     height: 48px;
     background-color: #ffb577;
-    color:black;
+    color: black;
     justify-content: center;
     margin: 0 auto;
     margin-top: 3rem;
     margin-block: 3rem;
-  
-    
+    cursor: pointer;
+   
 }
+
 .menu_button:hover,
 .menu_button:focus,
 .menu_button:active {
     opacity: 0.75;
 }
+
 .button_services__body:hover {
-  background-color: #ecc19e;
-  border: #ffb577;
+    background-color: #ffb577;
+    border: #ffb577;
+    background-color: #ecc19e;
+    border: #ffb577;
+    background-color: #ecc19e;
+    border: #ffb577;
+    
 }
 .menu__wrapper {
     width: 100%;
@@ -844,3 +892,49 @@ grid-gap: 30px;
     left: 48%;
 }
 
+/* About blog (Nadya) */
+.blog__title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.blog {
+    display: grid;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: space-between;
+    gap: 32px;
+}
+
+.item1__date,
+.item2__date,
+.item3__date,
+.item1__about,
+.item2__about,
+.item3__about {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #B8B8B8;
+}
+
+.item1,
+.item2,
+.item3 {
+    background-color: #1F1D21;
+    ;
+}
+
+.blog__image {
+    width: 405px;
+    height: 234px;
+
+}
