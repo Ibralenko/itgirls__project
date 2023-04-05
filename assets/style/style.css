@@ -507,9 +507,6 @@ p {
 
 
 
-
-
-
 .what__logo {
     width: 48px;
     height: 48px;
@@ -681,13 +678,16 @@ grid-gap: 30px;
     margin: 0 auto;
     margin-top: 3rem;
     margin-block: 3rem;
-    cursor: pointer;
+  
     
 }
-
-
+.menu_button:hover,
+.menu_button:focus,
+.menu_button:active {
+    opacity: 0.75;
+}
 .button_services__body:hover {
-  background-color: #ffb577;
+  background-color: #ecc19e;
   border: #ffb577;
 }
 /* Our menu styles end (Gulya) */
