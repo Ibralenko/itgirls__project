@@ -295,6 +295,10 @@ p {
 }
 
 @media (max-width: 950px) {
+    .hero__left-part {
+        text-align: center;
+    }
+
     .hero__container {
         display: flex;
         align-items: center;
@@ -323,8 +327,16 @@ p {
 }
 
 @media screen and (max-width: 576px) {
+    .hero__left-part {
+        max-width: 350px;
+    }
+
     .hero__title {
         font-size: 30px;
+    }
+
+    .hero__left-part {
+        text-align: center;
     }
 
     .hero__subtitle {
@@ -337,6 +349,9 @@ p {
 }
 
 @media screen and (max-width: 325px) {
+    .hero__left-part {
+        text-align: center;
+    }
 
     .hero__left-part,
     .hero__right-part {
@@ -472,15 +487,37 @@ p {
 }
 
 
-@media (min-width: 950px) {
-    .about-company__right {
-        display: none;
+@media (max-width: 960px) {
+    .about-company {
+        display: block;
     }
 
+    .about-company__img-1 {
+        Width: 240px;
+        Height: 500px;
+        margin-top: 81px;
+        margin-left: 60px;
+    }
+
+    .about-company__img-2 {
+        position: absolute;
+        width: 240px;
+        height: 500px;
+        right: -70px;
+        top: 50px;
+        border-radius: 0px;
+        margin-bottom: 67px;
+    }
+
+    .about-company__left {
+        text-align: center;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 576px) {
     .about-company__left {
+        text-align: center;
         margin: auto;
     }
 
@@ -489,14 +526,19 @@ p {
     }
 }
 
-@media screen and (max-width: 325px) {}
+@media screen and (max-width: 325px) {
+    .about-company__left {
+        text-align: center;
+        margin: auto;
+        margin-right: 10px;
+    }
 
-
+    .about-company__right {
+        display: none;
+    }
+}
 
 /* About company styles end (Julia) */
-/* About company styles end (Julia) */
-
-
 
 
 /* What we are serving styles start (Gulya) */
@@ -514,23 +556,18 @@ p {
 
 .what {
     margin-left: 20px;
-    
-    
 }
 
 .what__header_block1 {
     margin-right: 30px;
     width: 50%;
- 
+
 }
 
 .what__header_block2 {
-    
-  width: 50%;
-  margin-right: 50px;
-    
-    }
-
+    width: 50%;
+    margin-right: 50px;
+}
 
 .what__header_title {
     font-family: "Playfair Display";
@@ -554,12 +591,11 @@ p {
     color: #FFB577;
     text-decoration: none;
     margin-bottom: 24px;
-    position: relative; 
+    position: relative;
     margin-right: 10px;
 }
 
 .what__header {
-    
     display: flex;
     align-items: center;
 }
@@ -618,11 +654,12 @@ p {
     margin-right: 20px;
     margin-top: 10%;
 }
+
 .menu__main {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr;
-grid-gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
@@ -640,9 +677,9 @@ grid-gap: 30px;
     color: #FFB577;
     text-decoration: none;
     margin-bottom: 24px;
-    position: relative; 
+    position: relative;
     margin-right: 10px;
-   
+
 }
 
 .menu__header {
@@ -651,35 +688,41 @@ grid-gap: 30px;
 }
 
 .menu__header_block1 {
-    width: 50% ;
+    width: 50%;
     font-family: "Playfair Display";
     font-style: normal;
     font-weight: 500;
     font-size: 35px;
-  
     color: #ffffff;
 }
+
 .menu__header_block2 {
     width: 50%;
 }
 
 .menu__container {
     display: flex;
-   
+
 }
+
 .menu_button {
     display: flex;
     align-items: center;
     width: 164px;
     height: 48px;
     background-color: #ffb577;
-    color:black;
+    color: black;
     justify-content: center;
     margin: 0 auto;
     margin-top: 3rem;
     margin-block: 3rem;
+<<<<<<< HEAD
+    cursor: pointer;
+
+=======
   
     
+>>>>>>> 5e8210f39f199971c818db4233690942f5318d6c
 }
 .menu_button:hover,
 .menu_button:focus,
@@ -687,9 +730,15 @@ grid-gap: 30px;
     opacity: 0.75;
 }
 .button_services__body:hover {
+<<<<<<< HEAD
+    background-color: #ffb577;
+    border: #ffb577;
+=======
   background-color: #ecc19e;
   border: #ffb577;
+>>>>>>> 5e8210f39f199971c818db4233690942f5318d6c
 }
+
 /* Our menu styles end (Gulya) */
 
 
@@ -771,4 +820,3 @@ grid-gap: 30px;
     top: 48%;
     left: 48%;
 }
-
