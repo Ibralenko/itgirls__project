@@ -50,6 +50,7 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
     height: 80px;
+    margin-bottom: 96px;
 }
 
 .header__logo {
@@ -235,6 +236,32 @@ p {
     display: flex;
 }
 
+.Our-menu__left-container {
+    display: flex;
+    align-items: center;
+    margin-right: 75px;
+}
+
+.Our-Menu__main-link {
+    margin-right: 32px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFB577;
+    text-decoration: none;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.Our-Menu__main-link::after {
+    content: url(/assets/img/svg/Line.svg);
+    position: absolute;
+    right: -64px;
+    top: -6px;
+}
+
 .Our-Menu__main-title {
     height: 136px;
     max-width: 643px;
@@ -264,26 +291,6 @@ p {
     margin-right: 40px;
 }
 
-.Our-Menu__main-link {
-    margin-right: 32px;
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFB577;
-    text-decoration: none;
-    margin-bottom: 24px;
-    position: relative;
-}
-
-.Our-Menu__main-link::after {
-    content: url(/assets/img/svg/Line.svg);
-    position: absolute;
-    right: -64px;
-    top: -6px;
-}
-
 .Our-Menu__link {
     font-family: 'Playfair Display';
     font-style: normal;
@@ -295,25 +302,32 @@ p {
     text-decoration: none;
 }
 
+.Our-Menu__right-container {
+    display: flex;
+    align-items: center;
+}
+
 .Our-Menu__cards {
     display: grid;
-    grid-template-columns: repeat(3, 406px);
+    grid-template-columns: repeat(6, 1fr);
     grid-gap: 32px;
-    grid-template-rows: repeat(4, 351px);
+}
+
+.Our-Menu__card {
+    grid-column: span 2;
+    margin-bottom: 32px;
 }
 
 .Our-Menu__card-pic {
-    width: 405px;
-    height: 271px;
     position: relative;
+    max-width: 100%
 }
 
 .Our-Menu__info {
     position: absolute;
-    bottom: -78px;
+    bottom: -40px;
     left: 0;
-    width: 405px;
-    height: 80px;
+    width: 100%;
     background-color: #1F1D21;
 }
 
@@ -330,4 +344,37 @@ p {
     line-height: 30px;
     color: #FFFFFF;
     opacity: 0.87;
+}
+
+@media screen and (max-width: 1244px) {
+    .Our-Menu__cards {}
+
+    .Our-Menu__card {
+        grid-column: span 6;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .Our-Menu {
+        display: flex;
+    }
+
+    .Our-Menu__cards {}
+
+    .Our-Menu__card {
+        grid-column: span 6;
+        margin-right: 0px;
+
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .Our-Menu__cards {}
+
+    .Our-Menu__card {
+        grid-column: span 5;
+    }
+
 }
