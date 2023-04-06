@@ -36,6 +36,7 @@ p {
     height: 48px;
     background: #ffb577;
     border: #FFB577;
+    cursor: pointer;
 }
 
 .general-button:hover,
@@ -276,6 +277,11 @@ p {
 
 .hero__btn {
     margin-bottom: 40px;
+}
+
+.hero__btn::after {
+    content: url(/assets/img/svg/Arrow-black.svg);
+    margin-left: 9px;
 }
 
 .sm-text {
@@ -643,6 +649,47 @@ p {
 }
 
 
+@media screen and (max-width: 750px) {
+    .about__header {
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    .what__container {
+
+        justify-content: center;
+
+    }
+    .what__subtitle {
+        font-size: larger;
+    }
+    .what__main {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .what__main_block-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .what__main_block-text {
+        margin-left: 60px;
+        margin-right: 60px;
+        
+
+
+    }
+    
+    .what__main_block-3 {
+        max-height: 233.73px;
+    }
+}
 /* What we are serving styles end (Gulya) */
 
 
@@ -655,13 +702,19 @@ p {
     margin-top: 10%;
 }
 
+.menu__wrapper {
+    width: 100%;
+}
 .menu__main {
-    display: grid;
+    width: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+grid-gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+
 }
 
 .menu__container {
@@ -702,7 +755,8 @@ p {
 
 .menu__container {
     display: flex;
-
+    width: 100%;
+   
 }
 
 .menu_button {
@@ -717,22 +771,45 @@ p {
     margin-top: 3rem;
     margin-block: 3rem;
     cursor: pointer;
-
-  
-    
+   
 }
+
 .menu_button:hover,
 .menu_button:focus,
 .menu_button:active {
     opacity: 0.75;
 }
+
 .button_services__body:hover {
     background-color: #ffb577;
     border: #ffb577;
-  background-color: #ecc19e;
-  border: #ffb577;
+    background-color: #ecc19e;
+    border: #ffb577;
+    background-color: #ecc19e;
+    border: #ffb577;
+    
+}
+.menu__wrapper {
+    width: 100%;
 }
 
+@media screen and (max-width: 750px) {
+    .menu__container {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .menu__header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu__main {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        grid-gap: 0px;
+    }
+}
 /* Our menu styles end (Gulya) */
 
 
@@ -813,4 +890,51 @@ p {
     position: absolute;
     top: 48%;
     left: 48%;
+}
+
+/* About blog (Nadya) */
+.blog__title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.blog {
+    display: grid;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: space-between;
+    gap: 32px;
+}
+
+.item1__date,
+.item2__date,
+.item3__date,
+.item1__about,
+.item2__about,
+.item3__about {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #B8B8B8;
+}
+
+.item1,
+.item2,
+.item3 {
+    background-color: #1F1D21;
+    ;
+}
+
+.blog__image {
+    width: 405px;
+    height: 234px;
+
 }
