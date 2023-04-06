@@ -716,13 +716,10 @@ p {
     margin: 0 auto;
     margin-top: 3rem;
     margin-block: 3rem;
-<<<<<<< HEAD
     cursor: pointer;
 
-=======
   
     
->>>>>>> 5e8210f39f199971c818db4233690942f5318d6c
 }
 .menu_button:hover,
 .menu_button:focus,
@@ -730,13 +727,10 @@ p {
     opacity: 0.75;
 }
 .button_services__body:hover {
-<<<<<<< HEAD
     background-color: #ffb577;
     border: #ffb577;
-=======
   background-color: #ecc19e;
   border: #ffb577;
->>>>>>> 5e8210f39f199971c818db4233690942f5318d6c
 }
 
 /* Our menu styles end (Gulya) */
