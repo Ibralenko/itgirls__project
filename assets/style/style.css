@@ -1033,16 +1033,69 @@ p {
     justify-self: end;
 }
 
+
+
+
 /* About contact (Nadya) */
 .contact {
+    box-sizing: border-box;
     display: grid;
-    grid-template-columns: 30% 1fr;
+    max-width: 1278px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
 
+.contact__left {
+    grid-area: 1/1/4/2;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    background: #1F1D21;
+    padding: 60px 64px;
+    align-self: stretch;
+}
+
+.working__hour,
+.details__txt,
+.details__contact {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.details__phone,
+.details__email {
+    display: flex;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #B8B8B8;
+}
+
+.map__right {
+    grid-area: 1/2/4/4;
+    max-width: 837px;
+    height: 100%;
+    border: 0;
+}
+
+
+
+
 /* About footer (Nadya) */
 
-.footer {
+.footer__wrapper {
     display: flex;
     max-width: 1278px;
     margin: 0 auto;
