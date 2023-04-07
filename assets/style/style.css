@@ -903,6 +903,63 @@ p {
     left: 48%;
 }
 
+
+
+/*Our story start (Gulya)*/
+.story {
+    max-width: 100%;
+    margin: 0px 0px 126px 0px;
+  
+  }
+  
+  .story__body {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+ 
+  .story__inscription {
+    margin: 86px 0px 7px 30px;
+  }
+  .image_1 {
+    max-width: 701px;
+    margin: 0px 0px 0px -153px;
+  }
+  .image_2 {
+    max-width: 536px;
+    margin: -75px 0px 0px 87px;
+  }
+  .story__aside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+  }
+  .story__article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    
+  }
+  .story__content {
+    display: flex;
+  }
+  .story__article__text1 {
+    margin: 199px 0px 156px 30px;
+  }
+  .story__article__text2 {
+    margin: 0px 0px 161px 80px;
+  }
+  .istory__article__text2 {
+    line-height: 125%;
+  }
+  
+/*Our story end (Gulya)*/
+
+
+
+
+
 /* About blog (Nadya) */
 .blog__title {
     max-width: 1278px;
