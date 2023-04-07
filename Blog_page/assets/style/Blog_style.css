@@ -346,15 +346,18 @@ max-height: 624px;
 .blogs__img {max-width: 132px;
 max-height: 144px;
 margin-right: 32px;}
+
 .blogs__text {display: flex;
     flex-direction: column;
     justify-content: space-around;
+    min-width: 300px;
 }
 
 @media screen and (max-width: 903px)
 {.blogs__container {display: flex;
     max-height: 624px;
     flex-direction: column;
+    flex-wrap: wrap;
     }
     .blogs__right1 {
         display: flex;
@@ -379,11 +382,29 @@ margin-right: 32px;}
 
 /* section all articles Anastasia start */
 .allarticles-container {display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-columns: 226px 1fr 226px 1fr;
 grid-template-rows: 1fr 1fr;
-grid-gap: 32px}
+grid-gap: 32px;
+align-content: start;
+}
+
 .allarticles-block {display: flex;
-    flex-direction: column;
-justify-content: space-around;}
+flex-direction: column;
+justify-content: space-around;
+justify-self: start;
+}
+
+@media screen and (max-width: 800px)
+{.allarticles-container {display: grid;
+    grid-template-columns: 226px 1fr;
+    grid-template-rows: 1fr 1fr  1fr 1fr;}
+}
+
+@media screen and (max-width: 370px)
+{.allarticles-container {display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;}
+.allarticles-img {display: none;}}
+
 
 
