@@ -1080,7 +1080,6 @@ p {
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
-    color: #B8B8B8;
 }
 
 .map__right {
@@ -1095,34 +1094,68 @@ p {
 
 /* About footer (Nadya) */
 
+.footer__wrapper:hover {
+    border: 3px solid rgba(65, 26, 82, 0.829);
+}
+
 .footer__wrapper {
-    display: flex;
-    max-width: 1278px;
+    box-sizing: border-box;
     margin: 0 auto;
-    padding: 0 15px;
+    padding-top: 160px;
+    display: flex;
+    max-width: 100%;
     flex-direction: column;
     justify-content: center;
 }
 
 .footer__logo {
-    margin: 0;
+    margin: 0 auto;
 }
+
 
 .footer__list {
     display: inline-flex;
-    justify-content: start;
-    padding: 10vh;
+    justify-content: center;
     list-style-type: none;
+    padding: 45px;
+
+}
+
+.footer__item {
+    margin: 0 40px;
+}
+
+.footer__link {
+    color: #FFFFFF;
     text-decoration: none;
+
 }
 
 .footer__bottom {
-    display: inline-flex;
+    display: flex;
     justify-content: space-around;
 }
 
 .social_icons {
+    display: inline-flex;
     list-style-type: none;
     text-decoration: none;
+}
+
+.icons__facebook,
+.icons__twitter,
+.icons__instagram,
+.icons__LinkedIn {
+    padding: 12px;
     justify-content: space-around;
 }
+
+.footer__container {
+    display: inline-flex;
+    margin: 0 40px;
+    justify-content: space-around;
+}
+
+
+
+/* THE END (Nadya) */
