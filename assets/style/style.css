@@ -719,6 +719,7 @@ grid-gap: 30px;
 
 .menu__container {
     display: flex;
+    margin-top: 10%;
 }
 
 .menu__link {
