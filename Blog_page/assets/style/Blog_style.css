@@ -236,7 +236,7 @@ line-height: 28px;
     }
 }
 /* section styles Anastasia start */
-/* section blogs Anastasia start */
+/* section blogs styles Anastasia start */
 .blogs__container {display: grid;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: 1fr 1fr 1fr;
@@ -271,21 +271,21 @@ max-height: 624px;
         background: inherit;
         background-size: cover;
         opacity: .3; color: #ffffff;}
-    .blogs__left-author {display: flex;
+    .blogs__author {display: flex;
     flex-direction: row;
     width: 198px;
     height: 52px;}
-    .blogs__left-author-text {display: flex;
+    .blogs__author-text {display: flex;
     flex-direction: column;
     justify-content: center;
     width: 142px;
     margin-left: 16px;}
-    .blogs__left-author-textsmall {font-family: 'Poppins';
+    .blogs__author-textsmall {font-family: 'Poppins';
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;}
-    .blogs__left-author-text p {margin: 0;}
+    .blogs__author-text p {margin: 0;}
     .blogs__left-bottom {display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -296,6 +296,7 @@ max-height: 624px;
         grid-column: 2/3;
         display: flex;
         max-height: 144px;
+        max-width: max-content;
         margin-left: 32px;
         margin-bottom: 32px;
 }
@@ -303,7 +304,7 @@ max-height: 624px;
             grid-column: 2/3;
         display: flex;
         max-height: 144px;
-        max-width: 537px;
+        max-width: max-content;;
         margin-left: 32px;
             margin-bottom: 32px;
         }
@@ -311,7 +312,7 @@ max-height: 624px;
                 grid-column: 2/3;
                 display: flex;
                 max-height: 144px;
-                max-width: 537px;
+                max-width: max-content;
                 margin-left: 32px;
             margin-bottom: 32px;}
 
@@ -350,8 +351,39 @@ margin-right: 32px;}
     justify-content: space-around;
 }
 
-
-
-
-
+@media screen and (max-width: 903px)
+{.blogs__container {display: flex;
+    max-height: 624px;
+    flex-direction: column;
+    }
+    .blogs__right1 {
+        display: flex;
+        max-height: 144px;
+        max-width: max-content;
+        margin-bottom: 32px;
+}
+.blogs__right2 {
+    display: flex;
+    max-height: 144px;
+    max-width: max-content;
+    margin-bottom: 32px;
+}
+.blogs__right3 {
+    display: flex;
+    max-height: 144px;
+    max-width: max-content;
+    margin-bottom: 32px;
+}}
 /* section blogs Anastasia end */
+
+
+/* section all articles Anastasia start */
+.allarticles-container {display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+grid-gap: 32px}
+.allarticles-block {display: flex;
+    flex-direction: column;
+justify-content: space-around;}
+
+
