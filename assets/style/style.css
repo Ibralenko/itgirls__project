@@ -909,51 +909,59 @@ p {
 .story {
     max-width: 100%;
     margin: 0px 0px 126px 0px;
-  
-  }
-  
-  .story__body {
+
+}
+
+.story__body {
     max-width: 75%;
     margin: 0 auto;
-  }
- 
-  .story__inscription {
+}
+
+.story__inscription {
     margin: 86px 0px 7px 30px;
-  }
-  .image_1 {
+}
+
+.image_1 {
     max-width: 701px;
     margin: 0px 0px 0px -153px;
-  }
-  .image_2 {
+}
+
+.image_2 {
     max-width: 536px;
     margin: -75px 0px 0px 87px;
-  }
-  .story__aside {
+}
+
+.story__aside {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 50%;
-  }
-  .story__article {
+}
+
+.story__article {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 50%;
-    
-  }
-  .story__content {
+
+}
+
+.story__content {
     display: flex;
-  }
-  .story__article__text1 {
+}
+
+.story__article__text1 {
     margin: 199px 0px 156px 30px;
-  }
-  .story__article__text2 {
+}
+
+.story__article__text2 {
     margin: 0px 0px 161px 80px;
-  }
-  .istory__article__text2 {
+}
+
+.istory__article__text2 {
     line-height: 125%;
-  }
-  
+}
+
 /*Our story end (Gulya)*/
 
 
@@ -961,10 +969,21 @@ p {
 
 
 /* About blog (Nadya) */
-.blog__title {
-    max-width: 1278px;
+.blog {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30% 70%;
+    align-items: space-between;
+    gap: 32px;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 0 15px;
+    margin-bottom: 207px;
+}
+
+.blog__title {
+    grid-area: 1/1/2/4;
+    padding: 8px 16px 32px 16px;
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 700;
@@ -972,22 +991,21 @@ p {
     line-height: 58px;
 }
 
-.blog {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: space-between;
-    gap: 10px;
-    max-width: 1278px;
-    margin: 0 auto;
-    padding: 0 15px;
+.blog__item1,
+.blog__item2,
+.blog__item3 {
+    background-color: #1F1D21;
+    justify-self: start;
 }
 
-.item1__date,
-.item2__date,
-.item3__date,
-.item1__about,
-.item2__about,
-.item3__about {
+.blog__item1__date,
+.blog__item2__date,
+.blog__item3__date,
+.blog__item1__about,
+.blog__item2__about,
+.blog__item3__about {
+    margin: 0;
+    padding: 32px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -996,18 +1014,23 @@ p {
     color: #B8B8B8;
 }
 
-.item1,
-.item2,
-.item3 {
-    background-color: #1F1D21;
-    ;
+.blog__item1__txt,
+.blog__item2__txt,
+.blog__item3__txt {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 8px 32px 0 32px;
 }
 
 .blog__image {
-    width: 405px;
-    height: 234px;
-    align-items: end;
-
+    max-width: 405px;
+    margin: 0;
+    justify-self: end;
 }
 
 /* About contact (Nadya) */
@@ -1028,7 +1051,9 @@ p {
     justify-content: center;
 }
 
-.footer__logo {}
+.footer__logo {
+    margin: 0;
+}
 
 .footer__list {
     display: inline-flex;
