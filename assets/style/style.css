@@ -926,17 +926,15 @@ p {
 
 
 /*Our story start (Gulya)*/
+
 .story__wrapper {
     max-width: 100%;
-<<<<<<< HEAD
     margin: 20px 0px 0px 0px;
     max-width: 1278px;
     margin: 0 auto;
     padding: 0 15px;
     }
    
-  
-  
   
   .story__body {
     max-width: 75%;
@@ -965,51 +963,13 @@ p {
   .story__images {
     display: flex;
   }
-  .story__aside {
-=======
-    margin: 0px 0px 126px 0px;
 
-}
-
-.story__body {
-    max-width: 75%;
-    margin: 0 auto;
-}
-
-.story__inscription {
-    margin: 86px 0px 7px 30px;
-}
-
-.image_1 {
-    max-width: 701px;
-    margin: 0px 0px 0px -153px;
-}
-
-.image_2 {
-    max-width: 536px;
-    margin: -75px 0px 0px 87px;
-}
-
-.story__aside {
->>>>>>> 3685366dd90160c5a000d4274724cce84686d6fc
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 50%;
-<<<<<<< HEAD
-    
-  }
+ 
   .story__article {
-=======
-}
-
-.story__article {
->>>>>>> 3685366dd90160c5a000d4274724cce84686d6fc
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 50%;
-<<<<<<< HEAD
     justify-content: center;
     
     
@@ -1039,26 +999,144 @@ p {
    
     
   }
-=======
 
-}
-
-.story__content {
+  .story__aside {
     display: flex;
-}
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    
+  }
 
+  @media screen and (max-width: 1750px) {
+    .story__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+}
+.story__article {
+    margin-top: 10%;
+} 
+
+
+
+
+@media screen and (min-width: 940px) and (max-width: 990px) {
+    .story__wrapper {
+        min-width: 1100px;
+    }
+    .story__content {
+        margin-left: 10px;
+        margin-right: 10px;
+        max-width: 1278px;
+       
+       margin-right: 0px;
+    }
+
+    
+    .story__content {
+        display: flex;
+        flex-direction: row;
+       
+    }
+}
+    @media screen and (max-width: 860px) {
+        .story__images {
+            display: flex;
+            flex-direction:column;
+            
+        }
+        .story__aside {
+            margin-left: 40%;
+        }
+        
+        
+        .story__subtitle {
+            font-size: 24px;
+        }
+
+        .image_1 {
+       
+            min-width: 440px;
+            min-height: 600px;
+           
+          }
+          .image_2 {
+            min-width: 440px;
+            min-height: 600px;
+            margin-top: 20px;
+           
+          }
+          .story__inscription {
+            margin-left: 30%;
+            width: 150%;
+          }
+          .story__article {
+            margin-left: 50%;
+}
+.story__header {
+    margin-left: 20%;
+    width: 100%;
+}
 .story__article__text1 {
-    margin: 199px 0px 156px 30px;
+    font-size: 24px;
+    width: 150%;
 }
-
 .story__article__text2 {
-    margin: 0px 0px 161px 80px;
-}
+    font-size: 24px;
+    width: 150%;
+    
 
-.istory__article__text2 {
-    line-height: 125%;
 }
->>>>>>> 3685366dd90160c5a000d4274724cce84686d6fc
+    }
+    @media screen and (max-width: 600px) {
+        
+        .story__aside {
+            margin-left: 70%;
+        }
+        
+        
+        .story__subtitle {
+            font-size: 32px;
+        }
+
+        .image_1 {
+       
+            min-width: 540px;
+            min-height: 700px;
+           
+          }
+          .image_2 {
+            min-width: 540px;
+            min-height: 700px;
+            margin-top: 20px;
+           
+          }
+          .story__inscription {
+            margin-left: 50%;
+            width: 200%;
+          }
+          .story__article {
+            margin-left: 90%;
+        }
+        .story__header {
+        margin-left: 10%;
+        width: 200%;
+        margin-top: 5%;
+        }
+        .story__article__text1 {
+         font-size: 32px;
+         width: 200%;
+        }
+        .story__article__text2 {
+         font-size: 32px;
+         width: 200%;
+    
+
+            }
+    
+        }
 
 /*Our story end (Gulya)*/
 
@@ -1218,16 +1296,6 @@ p {
     justify-content: center;
 }
 
-<<<<<<< HEAD
-=======
-.footer__logo {
-    max-width: 1278px;
-    padding: 0 15px;
-    margin: 0 auto;
-    margin-bottom: 45px;
-}
-
->>>>>>> 3685366dd90160c5a000d4274724cce84686d6fc
 
 .footer__list {
     display: inline-flex;
