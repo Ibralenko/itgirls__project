@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finsweet</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:ital,wght@0,400;0,500;1,600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Poppins:ital,wght@0,400;0,500;1,600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/style/normalize.css">
     <link rel="stylesheet" type="text/css" href="./assets/style/style.css">
     <link rel="shortcut icon" href="./assets/img/svg/short-ico.svg" type="image/svg" />
 </head>
 
 <body>
-    <!-- Julia ------ header -->
     <header class="header wrapper">
         <div class="header__left-part">
             <div class="header__logo">
@@ -24,13 +25,13 @@
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__item">
-                        <a href="#" class="header__link">Home</a>
+                        <a href="index.html" class="header__link">Home</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__link">Menu</a>
+                        <a href="./Menu_page/Menu.html" class="header__link">Menu</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__link">About us</a>
+                        <a href="#" class="header__link">About Us</a>
                     </li>
                     <li class="header__item">
                         <a href="#" class="header__link">Our Story</a>
@@ -42,22 +43,24 @@
                         <a href="#" class="header__link">Contact</a>
                     </li>
                 </ul>
+            </nav>
         </div>
         <div class="header__right-part">
             <a class="header__link right-link" href="#">Clone project</a>
         </div>
-        <div class="header__burger-menu">
-            <input id="burger-menu__toggle" type="checkbox" />
-            <label class="burgee-menu__btn" for="burger-menu__toggle">
+        <div class="hamburger-menu wrapper">
+            <input id="menu__toggle" type="checkbox">
+            <label class="menu__btn" for="menu__toggle">
                 <span></span>
             </label>
             <ul class="menu__box">
-                <li><a class="burger-menu__item" href="#">Home</a></li>
-                <li><a class="burger-menu__item" href="#">Menu</a></li>
-                <li><a class="burger-menu__item" href="#">About us</a></li>
-                <li><a class="burger-menu__item" href="#">Our Story</a></li>
-                <li><a class="burger-menu__item" href="#">Blog</a></li>
-                <li><a class="burger-menu__item" href="#">Contact</a></li>
+                <li><a class="menu__item" href="index.html">Home</a></li>
+                <li><a class="menu__item" href="./Menu_page/Menu.html">Menu</a></li>
+                <li><a class="menu__item" href="#">About Us</a></li>
+                <li><a class="menu__item" href="#">Our Story</a></li>
+                <li><a class="menu__item" href="#">Blog</a></li>
+                <li><a class="menu__item" href="#">Contact</a></li>
+                <li> <a class="menu__item right-link" href="#">Clone project</a></li>
             </ul>
         </div>
     </header>
@@ -82,7 +85,6 @@
                     <p class="hero__text">Master canteen, BBSR , Odisha 752054</p>
                     <h3 class="hero__title sm-text">Call us</h3>
                     <p class="hero__subtitle">+9776462441</p>
-
                 </div>
                 <div class="hero__right-part">
                     <img class="hero__image" src="./assets/img/jpg/hero_img.jpg" alt="cup of coffee">
@@ -132,100 +134,119 @@
         <!-- Julia ------ ABOUT-COMPANY--END-->
 
         <!-- Gulya what we are serving-->
-        <section class="about">
-            <div class="about__container">
-
-                <h2 class="about__title">WHAT WE ARE SERVING</h2>
+        <section class="what__wrapper">
+            <div class="what__container">
+                <div><a class="what__link" href="#">WHAT WE ARE SERVING</a></div>
+                <div><img src="assets/img/svg/Line.svg" alt="line"></div>
             </div>
             <div class="about__header">
-                <div class="about__header_block1"></div>
-                <div class="about__header_block2"></div>
-            </div>
-            <div class="about__main">
-                <div class="about__main_block-1">
-                    <img class="about__logo" src="assets/img/svg/about1.png" alt="blocklogo">
-                    <h2 class="about__subtitle">Quafe Cake</h2>
-                    <p class="about__main_block-1">Through True RichAttended no end it his mother since favourable real
-                        had half every him.</p>
+                <div class="about__header_block1">
+                    <h2 class="about__heaad_title">We all have to eat, so why not do it beautifully?</h2>
                 </div>
-                <div class="about__main_block-2">
-                    <img class="about__logo" src="assets/img/svg/about2.png" alt="blocklogo">
-                    <h2 class="about__subtitle">Cofee</h2>
-                    <p class="about__main_block-1">Through True Rich Attended no end it his mother since favourable real
-                        had half every him.</p>
-                </div>
-                <div class="about__main_block-3">
-                    <img class="about__logo" src="assets/img/svg/about3.png" alt="blocklogo">
-                    <h2 class="about__subtitle">Fast food</h2>
-                    <p class="about__main_block-1">Through True Rich Attended no end it his mother since favourable real
-                        had half every him.</p>
+                <div class="about__header_block2">
+                    <p class="what__subtitle">Through True Rich Attended does no end it his mother since
+                        favourable real
+                        had half every him case in packages enquire we up ecstatic.. Through True Rich Attended
+                        does no
+                        end it his mother</p>
                 </div>
             </div>
-            <div class="about__main_block-4">
-                <img class="about__logo" src="assets/img/svg/about4.png" alt="blocklogo">
-                <h2 class="about__subtitle">Cocktails</h2>
-                <p class="about__main_block-1">Through True Rich Attended no end it his mother since favourable real had
-                    half every him.</p>
-            </div>
-            </div>
-            <div class="about__main_block-5">
-                <img class="about__logo" src="assets/img/svg/about5.png" alt="blocklogo">
-                <h2 class="about__subtitle">grill</h2>
-                <p class="about__main_block-1">Through True Rich Attended no end it his mother since favourable real had
-                    half every him.</p>
-            </div>
-            </div>
-            <div class="about__main_block-6">
-                <img class="about__logo" src="assets/img/svg/about6.png" alt="blocklogo">
-                <h2 class="about__subtitle">Snasks</h2>
-                <p class="about__main_block-1">Through True Rich Attended no end it his mother since favourable real had
-                    half every him.</p>
-            </div>
-            </div>
-            </div>
+            <div class="what__main">
+                <div class="what__main_block-1">
+                    <img class="what__logo" src="assets/img/svg/about1.png" alt="blocklogo">
+                    <h2 class="what__subtitle">Quafe Cake</h2>
+                    <p class="what__main_block-text">Through True Rich Attended no end it his mother since
+                        favourable real
+                        had half every him.</p>
+                </div>
+                <div class="what__main_block-1">
+                    <img class="what__logo" src="assets/img/svg/about2.png" alt="blocklogo">
+                    <h2 class="what__subtitle">Cofee</h2>
+                    <p class="what__main_block-text">Through True Rich Attended no end it his mother since
+                        favourable real
+                        had half every him.</p>
+                </div>
+                <div class="what__main_block-1">
+                    <img class="what__logo" src="assets/img/svg/about3.png" alt="blocklogo">
+                    <h2 class="what__subtitle">Fast food</h2>
+                    <p class="what__main_block-text">Through True Rich Attended no end it his mother since
+                        favourable real
+                        had half every him.</p>
+                </div>
 
+                <div class="what__main_block-1">
+                    <img class="what__logo" src="assets/img/svg/about4.png" alt="blocklogo">
+                    <h2 class="what__subtitle">Cocktails</h2>
+                    <p class="what__main_block-text">Through True Rich Attended no end it his mother since
+                        favourable real had
+                        half every him.</p>
+                </div>
+                <div class="what__main_block-1">
+                    <img class="what__logo" src="assets/img/svg/about5.png" alt="blocklogo">
+                    <h2 class="what__subtitle">Grill</h2>
+                    <p class="what__main_block-text">Through True Rich Attended no end it his mother since
+                        favourable real had
+                        half every him.</p>
+                </div>
+
+                <div class="what__main_block-1">
+                    <img class="what__logo" src="assets/img/svg/about6.png" alt="blocklogo">
+                    <h2 class="what__subtitle">Snasks</h2>
+                    <p class="what__main_block-text">Through True Rich Attended no end it his mother since favourable
+                        real had
+                        half every him.</p>
+                </div>
             </div>
         </section>
         <!-- Gulya ------ Our menu-->
-        <section class="menu">
-            <div class="menu__container">
+        <section class="menu__wrapper">
 
-                <h2 class="menu__title">Our menu</h2>
+            <div class="menu__container">
+                <div><a class="menu__link" href="#">OUR MENU</a></div>
+                <div><img src="assets/img/svg/Line.svg" alt="line"></div>
             </div>
             <div class="menu__header">
-                <div class="menu__header_block1"></div>
-                <div class="menu__header_block2"></div>
+                <div class="menu__header_block1">
+                    <h2>Discover our menu chart</h2>
+                </div>
+                <div class="menu__header_block2">
+                    <p class="menu__subtitle">Through True Rich Attended does no end it his mother since favourable
+                        real had half every him case in packages enquire we up ecstatic.. Through True Rich Attended
+                        does no
+                        end it his mother</p>
+                </div>
             </div>
             <div class="menu__main">
                 <div class="menu__main_block-1">
-                    <img class="menu__image" src="" alt="">
-                    <p class="about__main_block-1"></p>
+                    <img class="menu__image" src="assets/img/svg/ourmenu1.png" alt="coffeecup">
+
                 </div>
                 <div class="menu__main_block-2">
-                    <img class="menu__image" src="" alt="">
-                    <p class="menu__main_block-1"></p>
+                    <img class="menu__image" src="assets/img/svg/ourmenu2.png" alt="cupcake">
+
                 </div>
                 <div class="menu__main_block-3">
-                    <img class="menu__image" src="" alt="">
-                    <p class="menu__main_block-1"></p>
+                    <img class="menu__image" src="assets/img/svg/ourmenu3.png" alt="chickenburger">
+
                 </div>
                 <div class="menu__main_block-4">
-                    <img class="menu__image" src="" alt="">
-                    <p class="menu__main_block-1"></p>
+                    <img class="menu__image" src="assets/img/svg/ourmenu4.png" alt="frenchfries">
+
                 </div>
                 <div class="menu__main_block-5">
-                    <img class="menu__image" src="" alt="">
-                    <p class="menu__main_block-1"></p>
+                    <img class="menu__image" src="assets/img/svg/ourmenu5.png" alt="sandwitch">
+
                 </div>
                 <div class="menu__main_block-6">
-                    <img class="menu__image" src="" alt="">
-                    <p class="menu__main_block-1"></p>
+                    <img class="menu__image" src="assets/img/svg/ourmenu6.png" alt="chenesesoup">
+
                 </div>
             </div>
-            <button class="menu__btn" type="button">View Menu</button>
-
+            <button class="menu_button" type="button">View Menu &#129042;</button>
+            </div>
             </div>
         </section>
+
 
         <!-- Mila Part with video-->
         <section class="quote">
@@ -233,37 +254,188 @@
                 <div class="quote__left-part">
                     <div class="quote__marks-text">
                         <h3 class="quote__marks-sign">“</h3>
-                        <p class="quote__text-words">Edit this text to make it your own. To edit, simply click directly on the text to start adding your own words. You can move the text by dragging and dropping the text</p>
+                        <p class="quote__text-words">Edit this text to make it your own. To edit, simply click directly
+                            on the text to start adding your own words. You can move the text by dragging and
+                            dropping
+                            the text</p>
                     </div>
                     <div class="quote__person">
                         <div class="quote__person-text">
                             <p class="quote__person-name">Joheny Andro</p>
                             <p class="quote__person-place">Bhubaneswar, Odisha</p>
                         </div>
-                        
-                        <div class="quote__person-face">
-                            <img class="quote__person-img" src="./assets/img/svg/Quote-JA.svg" alt="Joheny Andro">
+                        <div class="quote__person">
+                            
+                        <div class="quote__person-text">
+                                <p class="quote__person-name">Joheny Andro</p>
+                                <p class="quote__person-place">Bhubaneswar, Odisha</p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
                 <div class="quote__right-part">
                     <div class="quote__right-part-video">
                         <object class="quote__video" type="image/svg" data="video.svg">
-                        <img src="./assets/img/svg/Video-Image.svg" alt="video">
+                            <img src="./assets/img/svg/Video-Image.svg" alt="video">
                         </object>
                     </div>
                     <div class="quote__right-part-poster">
                         <img class="quote__video-button" src="./assets/img/svg/Play-button.svg" alt="button">
                     </div>
-
-
                 </div>
+            </div>
             </div>
 
         </section>
-<!--Mila Part with Video END-->
+        <!--Mila Part with Video END-->
 
+
+
+
+        <!--Gulya OUR story start-->
+
+        <section class="story">
+
+            <div class="story__content">
+                <div class="story__aside">
+                    <div class="story__inscription">Our story</div>
+                    <div class="story__aside_text">Through True Rich Attended does no end it his mother
+                        since favourable real had half every him case in packages enquire we up
+                        ecstatic.</div>
+                    <img src="assets/img/svg/ourstory1.png" alt="Our story. pic.1" class="story__image image_1">
+                    <img src="assets/img/svg/ourstory2.png" alt="Our story. pic.2" class="story__image image_2">
+                </div>
+                <div class="story__article">
+                    <div class="story__header">
+                        <p class="story__article_header">One of the best cafes in New York.</p>
+                    </div>
+                    <div class="story__text1">
+                        <p class="story__article__text1">Writing UX copies can be a little frustrating
+                            and confusing, and sometimes we are unsure about how to get the right word.
+                            To crack the code for the UX copies, we at Zeta Design wanted to build a
+                            Figma plugin for the larger design community. The plugin is called the Ghost
+                            UXWriter and has a set of UX copies cataloged and categorized with a voice
+                            and tone variation ranging from plain, casual to playful. The intention to
+                            build this Figma plugin originated from our Medium blog post, ‘Designing
+                            voice and tone for error messages.</p>
+                    </div>
+                    <div class="story__text2">
+                        <p class="story__article__text2"> Writing UX copies can be a little frustrating
+                            and confusing, and sometimes we are unsure about how to get the right word.
+                            To crack the code for the UX copies, we at Zeta Design wanted to build a
+                            Figma plugin for the larger design community. The plugin is called the Ghost
+                            UXWriter and has a set of UX copies cataloged and categorized with a voice
+                            and tone variation ranging from plain, casual to playful. The intention to
+                            build this Figma plugin originated from our Medium blog post, ‘Designing
+                            voice.
+                        </p>
+                    </div>
+
+
+
+        </section>
+        <!--Gulya OUR story end-->
+
+        <!-- Nadya ------BLOG+MAP+FOOTER----->
+        <section class="blog">
+            <h2 class="blog__title">Read Our Lastest Blog</h2>
+            <div class="blog__item1">
+                <p class="blog__item1__date">21 Jun 2021</p>
+                <h3 class="blog__item1__txt">Extra Thick Homemad Pizza Sauce</h3>
+                <p class="blog__item1__about">It is a long established fact that a reader will be distracted
+                    by the
+                    readable content of a page.</p>
+                <img class="blog__image" src="./assets/img/jpg/blog1.jpg" alt="">
+            </div>
+            <div class="blog__item2">
+                <p class="blog__item2__date">21 Jun 2021</p>
+                <h3 class="blog__item2__txt">The Best Way to Store Fresh Herbs</h3>
+                <p class="blog__item2__about">It is a long established fact that a reader will be distracted
+                    by the
+                    readable content of a page.</p>
+                <img class="blog__image" src="./assets/img/jpg/blog2.jpg" alt="">
+            </div>
+            <div class="blog__item3">
+                <p class="blog__item3__date">21 Jun 2021</p>
+                <h3 class="blog__item3__txt">5 ways to prepare porridge</h3>
+                <p class="blog__item3__about">It is a long established fact that a reader will be distracted
+                    by the
+                    readable content of a page.</p>
+                <img class="blog__image" src="./assets/img/jpg/blog3.jpg" alt="">
+            </div>
+        </section>
+        <section class="contact">
+            <div class="contact__left">
+                <div class="details__working">
+                    <h3 class="working__hour">Working Hour</h3>
+                    <p class="working__about">Sunday to Saturday<br>09:00 AM to 11:00 PM</p>
+                </div>
+                <div class="details__location">
+                    <h3 class="details__txt">Location</h3>
+                    <p class="details__address">Street - 127, New York,<br>United States<br>546544</p>
+                </div>
+                <div class="phone">
+                    <h3 class="details__contact">Contact us</h3>
+                    <a class="details__phone" href="tel:+123456789">+123456789</a>
+                    <a class="details__email" href="mailto:hey@yourdomain.com">hey@yourdomain.com</a>
+                </div>
+            </div>
+            <div class="map__right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d48394.48549456861!2d-74.0228615!3d40.7035877!3m2!1i1024!2i768!4f13.1!2m1!1sStreet%20-%20127%2C%20New%20York!5e0!3m2!1sen!2sby!4v1680899452643!5m2!1sen!2sby"
+                    width="837" height="532" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
     </main>
+
+
+    <footer class="footer__wrapper">
+        <div class="footer__logo">
+            <a href="#">
+                <img class="footer__logo-pic" src="./assets/img/svg/Logo.svg" alt="Finsweet">
+            </a>
+        </div>
+        <ul class="footer__list">
+            <li class="footer__item">
+                <a href="#" class="footer__link">Home</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Menu</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">About us</a>
+            </li>
+            <li class="footerr__item">
+                <a href="#" class="footer__link">Our Story</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Blog</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Contact</a>
+            </li>
+        </ul>
+        <div class="footer__bottom">
+            <p class="footer__bottom__text">© 2021 Finsweet | All rights reserved.</p>
+            <div class="social">
+                <ul class="social_icons">
+                    <li><img class="icons__facebook" src="./assets/img/svg/facebook.svg"></li>
+                    <li><img class="icons__twitter" src="./assets/img/svg/twitter.svg"></li>
+                    <li><img class="icons__instagram" src="./assets/img/svg/instagram.svg"></li>
+                    <li><img class="icons__LinkedIn" src="./assets/img/svg/linkedin.svg"></li>
+                </ul>
+            </div>
+            <div class="footer__container">
+                <a class="footer__link" href="#">Contact Us</a>
+                <span class="footer__arrow">&rarr;</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Nadya ------BLOG+MAP+FOOTER--END---->
+
 
 </body>
 

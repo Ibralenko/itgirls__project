@@ -36,6 +36,7 @@ p {
     height: 48px;
     background: #ffb577;
     border: #FFB577;
+    cursor: pointer;
 }
 
 .general-button:hover,
@@ -44,7 +45,14 @@ p {
     opacity: 0.75;
 }
 
+.wrapper {
+    max-width: 1278px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 /*  header styles start (Julia)*/
+
 
 .header {
     display: flex;
@@ -118,15 +126,123 @@ p {
     transition: 0.2s all;
 }
 
-@media screen and (min-width:320px) {
-    .header__burger-menu {
+
+@media (min-width:903px) {
+    .hamburger-menu {
         display: none;
+    }
+}
+
+@media (max-width: 902px) {
+    .header__clone-container {
+        display: none;
+    }
+
+    .right-link {
+        display: none;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    #menu__toggle {
+        opacity: 0;
+    }
+
+    #menu__toggle:checked+.menu__btn>span {
+        transform: rotate(45deg);
+    }
+
+    #menu__toggle:checked+.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0deg);
+    }
+
+    #menu__toggle:checked+.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #menu__toggle:checked~.menu__box {
+        left: 0 !important;
+    }
+
+    .menu__btn {
+        position: fixed;
+        top: 40px;
+        right: 70px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 11;
+    }
+
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #FFC492;
+        transition-duration: .25s;
+    }
+
+    .menu__btn>span::before {
+        content: '';
+        top: -8px;
+    }
+
+    .menu__btn>span::after {
+        content: '';
+        top: 8px;
+    }
+
+    .menu__box {
+        display: block;
+        position: fixed;
+        top: 0px;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        background-color: rgba(25, 22, 27, 1);
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+        transition-duration: .25s;
+        z-index: 10;
+    }
+
+    .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: #fff;
+        font-family: 'Poppins';
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+        transition-duration: .25s;
+        z-index: 9;
+    }
+
+    .right-link {
+        padding-right: 32px;
+        color: rgba(255, 196, 146, 1);
+        text-decoration: none;
+        transition: 0.2s all;
+    }
+
+    .menu__item:hover {
+        background-color: #e1975b;
     }
 }
 
 /* header  styles end */
 
-/*hero styles start (Julia)*/
+/* hero styles start (Julia) */
 .hero {
     margin-bottom: 160px;
 }
@@ -145,7 +261,7 @@ p {
     max-height: 136px;
     font-family: "Playfair Display";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 643px;
     font-size: 56px;
     line-height: 68px;
     color: #ffffff;
@@ -161,6 +277,11 @@ p {
 
 .hero__btn {
     margin-bottom: 40px;
+}
+
+.hero__btn::after {
+    content: url(/assets/img/svg/Arrow-black.svg);
+    margin-left: 9px;
 }
 
 .sm-text {
@@ -179,41 +300,72 @@ p {
     height: 683px;
 }
 
-@media screen and (max-width: 960px) {
+@media (max-width: 950px) {
+    .hero__left-part {
+        text-align: center;
+    }
+
     .hero__container {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .hero__title {
-        font-size: 50px;
-        max-width: 700px;
+        font-size: 40px;
+        margin-bottom: 40px;
     }
 
     .hero__left-part,
     .hero__right-part {
-        text-align: center;
         max-width: 700px;
         margin: 0 auto;
     }
 
     .hero__subtitle {
-        margin-left: 10%;
+        font-size: 15px;
+    }
+
+    .hero__subtitle:last-child {
+        margin-left: 5%;
     }
 }
 
 @media screen and (max-width: 576px) {
+    .hero__left-part {
+        max-width: 350px;
+    }
+
     .hero__title {
         font-size: 30px;
+    }
+
+    .hero__left-part {
+        text-align: center;
     }
 
     .hero__subtitle {
         margin-bottom: 80px;
     }
+
+    .hero__subtitle:last-child {
+        margin-left: 0px;
+    }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 325px) {
+    .hero__left-part {
+        text-align: center;
+    }
+
+    .hero__left-part,
+    .hero__right-part {
+        margin: auto auto;
+    }
+
     .hero__title {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .hero__subtitle {
@@ -247,15 +399,16 @@ p {
     line-height: 24px;
     color: #FFB577;
     text-decoration: none;
+    margin-bottom: 24px;
+    position: relative;
 }
 
 .about-company__link::after {
-    content: '';
-    background-color: rgba(255, 255, 255, 1);
-    height: 1px;
-    width: 48px;
-    display: inline;
-    /* margin-right: 16px; */
+    content: url(/assets/img/svg/Line.svg);
+    position: absolute;
+    right: -64px;
+    top: -6px;
+
 }
 
 .about-company__columns {
@@ -306,7 +459,7 @@ p {
     position: absolute;
     width: 240px;
     height: 500px;
-    right: -250px;
+    right: -270px;
     top: 0px;
     border-radius: 0px;
     margin-bottom: 67px;
@@ -316,6 +469,7 @@ p {
     Width: 240px;
     Height: 500px;
     margin-top: 81px;
+    margin-left: -10px;
 }
 
 .about-company__container {
@@ -338,7 +492,340 @@ p {
     margin-left: 9px;
 }
 
+
+@media (max-width: 960px) {
+    .about-company {
+        display: block;
+    }
+
+    .about-company__img-1 {
+        Width: 240px;
+        Height: 500px;
+        margin-top: 81px;
+        margin-left: 60px;
+    }
+
+    .about-company__img-2 {
+        position: absolute;
+        width: 240px;
+        height: 500px;
+        right: -70px;
+        top: 50px;
+        border-radius: 0px;
+        margin-bottom: 67px;
+    }
+
+    .about-company__left {
+        text-align: center;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about-company__left {
+        text-align: center;
+        margin: auto;
+    }
+
+    .about-company__right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .about-company__left {
+        text-align: center;
+        margin: auto;
+        margin-right: 10px;
+    }
+
+    .about-company__right {
+        display: none;
+    }
+}
+
 /* About company styles end (Julia) */
+
+
+/* What we are serving styles start (Gulya) */
+.about__header {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.what__logo {
+    width: 48px;
+    height: 48px;
+}
+
+.what {
+    margin-left: 20px;
+}
+
+.what__header_block1 {
+    margin-right: 30px;
+    width: 50%;
+
+}
+
+.what__header_block2 {
+    width: 50%;
+    margin-right: 50px;
+}
+
+.what__header_title {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #ffffff;
+}
+
+.what__container {
+    display: flex;
+}
+
+.what__link {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFB577;
+    text-decoration: none;
+    margin-bottom: 24px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.what__header {
+    display: flex;
+    align-items: center;
+}
+
+
+.what__main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 120px;
+
+}
+
+
+
+.about__logo {
+    width: 48px;
+    height: 48px;
+}
+
+.about {
+    margin-left: 20px;
+
+}
+
+.about__header_block1 {
+    margin-right: 30px;
+    width: 50%;
+}
+
+.about__header_block2 {
+    margin-right: 30px;
+    width: 50%;
+
+}
+
+.about__heaad_title {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #ffffff;
+
+}
+
+
+@media screen and (max-width: 750px) {
+    .about__header {
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .what__container {
+
+        justify-content: center;
+
+    }
+
+    .what__subtitle {
+        font-size: larger;
+    }
+
+    .what__main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .what__main_block-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .what__main_block-text {
+        margin-left: 60px;
+        margin-right: 60px;
+
+
+
+    }
+
+    .what__main_block-3 {
+        max-height: 233.73px;
+    }
+}
+
+/* What we are serving styles end (Gulya) */
+
+
+
+/* Our menu styles start (Gulya) */
+
+.menu {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10%;
+}
+
+.menu__wrapper {
+    width: 100%;
+}
+
+.menu__main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+
+}
+
+.menu__container {
+    display: flex;
+    margin-top: 10%;
+}
+
+.menu__link {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFB577;
+    text-decoration: none;
+    margin-bottom: 24px;
+    position: relative;
+    margin-right: 10px;
+
+}
+
+.menu__header {
+    display: flex;
+    align-items: center;
+}
+
+.menu__header_block1 {
+    width: 50%;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.menu__header_block2 {
+    width: 50%;
+}
+
+.menu__container {
+    display: flex;
+    width: 100%;
+
+}
+
+.menu_button {
+    display: flex;
+    align-items: center;
+    width: 164px;
+    height: 48px;
+    background-color: #ffb577;
+    color: black;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-block: 3rem;
+    cursor: pointer;
+
+}
+
+.menu_button:hover,
+.menu_button:focus,
+.menu_button:active {
+    opacity: 0.75;
+}
+
+.button_services__body:hover {
+    background-color: #ffb577;
+    border: #ffb577;
+    background-color: #ecc19e;
+    border: #ffb577;
+    background-color: #ecc19e;
+    border: #ffb577;
+
+}
+
+.menu__wrapper {
+    width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+    .menu__container {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .menu__header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu__main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        grid-gap: 0px;
+    }
+}
+
+/* Our menu styles end (Gulya) */
+
+
+
+
 
 
 /*Part with Video (Mila)*/
@@ -347,22 +834,25 @@ p {
     justify-content: center;
 
 }
-.quote__left-part{
+
+.quote__left-part {
     margin-left: 160px;
     margin-right: 78px;
     max-width: 674px;
     max-height: 668px;
 }
+
 .quote__marks-sign {
     max-width: 34px;
     max-width: 35px;
-    font-family:'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 72px;
     font-weight: normal;
     line-height: 128%;
     color: #FFFFFF;
     margin-bottom: 43px;
 }
+
 .quote__text-words {
     max-width: 436px;
     max-height: 288px;
@@ -375,6 +865,7 @@ p {
     opacity: 0.87;
 
 }
+
 .quote__person {
     display: flex;
     justify-content: space-between;
@@ -384,18 +875,22 @@ p {
 .quote__person-face {
     border-bottom: 2px solid white;
 }
+
 .quote__person-name,
 .quote__person-place {
     margin: 0;
 
 }
+
 .quote__person-name {
     max-width: 113px;
     max-height: 24px;
 }
+
 .quote__person-place {
     opacity: 0.6;
 }
+
 .quote__right-part {
     max-width: 925px;
     max-height: 668px;
@@ -411,3 +906,275 @@ p {
     opacity: 0.24;
     width: 100%;
 }
+
+
+
+/*Our story start (Gulya)*/
+.story {
+    max-width: 100%;
+    margin: 0px 0px 126px 0px;
+
+}
+
+.story__body {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.story__inscription {
+    margin: 86px 0px 7px 30px;
+}
+
+.image_1 {
+    max-width: 701px;
+    margin: 0px 0px 0px -153px;
+}
+
+.image_2 {
+    max-width: 536px;
+    margin: -75px 0px 0px 87px;
+}
+
+.story__aside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.story__article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+
+}
+
+.story__content {
+    display: flex;
+}
+
+.story__article__text1 {
+    margin: 199px 0px 156px 30px;
+}
+
+.story__article__text2 {
+    margin: 0px 0px 161px 80px;
+}
+
+.istory__article__text2 {
+    line-height: 125%;
+}
+
+/*Our story end (Gulya)*/
+
+
+
+
+
+/* About blog (Nadya) */
+.blog {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30% 70%;
+    align-items: space-between;
+    gap: 32px;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 207px;
+}
+
+.blog__title {
+    grid-area: 1/1/2/4;
+    padding: 8px 16px 32px 16px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.blog__item1,
+.blog__item2,
+.blog__item3 {
+    background-color: #1F1D21;
+    justify-self: start;
+}
+
+.blog__item1__date,
+.blog__item2__date,
+.blog__item3__date,
+.blog__item1__about,
+.blog__item2__about,
+.blog__item3__about {
+    margin: 0;
+    padding: 32px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #B8B8B8;
+}
+
+.blog__item1__txt,
+.blog__item2__txt,
+.blog__item3__txt {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 8px 32px 0 32px;
+}
+
+.blog__image {
+    max-width: 405px;
+    margin: 0;
+    justify-self: end;
+}
+
+
+
+
+/* About contact (Nadya) */
+.contact {
+    box-sizing: border-box;
+    display: grid;
+    max-width: 1278px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.contact__left {
+    grid-area: 1/1/4/2;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    background: #1F1D21;
+    padding: 60px 64px;
+    align-self: stretch;
+}
+
+.working__hour,
+.details__txt,
+.details__contact {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.details__phone,
+.details__email {
+    display: flex;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.map__right {
+    grid-area: 1/2/4/4;
+    max-width: 837px;
+    height: 100%;
+    border: 0;
+}
+
+
+
+
+/* About footer (Nadya) */
+
+.footer__wrapper:hover {
+    border: 3px solid rgba(83, 23, 75, 0.829);
+}
+
+.footer__wrapper {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 160px;
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__logo {
+    max-width: 1278px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+
+
+.footer__list {
+    display: inline-flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 0 32%;
+
+}
+
+.footer__item {
+    margin: 0 40px;
+
+}
+
+.footer__link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer__bottom:hover {
+    border-top: 3px solid rgba(119, 29, 158, 0.829);
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    padding: 0 8%;
+}
+
+.social_icons {
+    display: inline-flex;
+    padding-left: 0;
+    list-style-type: none;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.icons__facebook,
+.icons__twitter,
+.icons__instagram,
+.icons__LinkedIn {
+    padding: 12px
+}
+
+.footer__container {
+    display: inline-flex;
+    margin: 0 40px;
+}
+
+.footer__arrow {
+    color: rgba(255, 181, 119, 1);
+}
+
+
+
+
+/* THE END (Nadya) */
