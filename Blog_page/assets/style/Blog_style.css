@@ -354,6 +354,7 @@ margin-right: 32px;}
     flex-direction: column;
     justify-content: space-around;
     min-width: 300px;
+    max-width: 373px;
 }
 
 @media screen and (max-width: 1024px)
