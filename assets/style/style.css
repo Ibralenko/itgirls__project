@@ -472,6 +472,11 @@ p {
     margin-left: -10px;
 }
 
+/* .about-company__img-1::after {
+    content: url(/assets/img/jpg/about-company__2.jpg);
+    position: absolute;
+} */
+
 .about-company__container {
     display: flex;
     justify-content: space-between;
@@ -500,15 +505,16 @@ p {
 
     .about-company__title,
     .about-company__subtitle {
-        margin: auto;
+        margin: 20px auto;
         text-align: center;
     }
 
     .about-company__img-1 {
         Width: 240px;
         Height: 500px;
+        right: 20px;
         margin-top: 81px;
-        margin-left: 20px;
+        margin-left: auto;
     }
 
     .about-company__img-2 {
@@ -523,6 +529,10 @@ p {
 
     .about-company__left {
         text-align: center;
+        margin: auto;
+    }
+
+    .about-company__right {
         margin: auto;
     }
 }
