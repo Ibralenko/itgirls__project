@@ -407,3 +407,7 @@ p {
     top: 48%;
     left: 48%;
 }
+.quote__line {
+    opacity: 0.24;
+    width: 100%;
+}
