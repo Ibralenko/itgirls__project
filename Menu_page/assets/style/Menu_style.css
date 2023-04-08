@@ -252,7 +252,6 @@ p {
 
 .Our-Menu__main-title {
     height: 136px;
-    max-width: 643px;
     font-family: "Playfair Display";
     font-style: normal;
     font-weight: 700;
@@ -292,14 +291,23 @@ p {
     color: #FFFFFF;
     opacity: 0.6;
     text-decoration: none;
+    transition: 0.2s all;
 }
 
+.first {
+    opacity: 10;
+}
 
+.Our-Menu__link:visited {
+    color: #fff;
+    opacity: 10;
+}
 
 .Our-Menu__cards {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 32px;
+    margin-bottom: 160px;
 }
 
 .Our-Menu__card {
@@ -310,6 +318,16 @@ p {
 .Our-Menu__card-pic {
     position: relative;
     max-width: 100%
+}
+
+.Our-Menu__image {
+    max-height: 100%;
+    width: 100%;
+    transition: 2s;
+}
+
+.Our-Menu__image:hover {
+    transform: scale(1.03);
 }
 
 .Our-Menu__info {
@@ -335,24 +353,111 @@ p {
     opacity: 0.87;
 }
 
-@media screen and (max-width: 1244px) {
+.contact {
+    box-sizing: border-box;
+    display: grid;
+    max-width: 1278px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.contact__left {
+    grid-area: 1/1/4/2;
+    width: 100%;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    background: #1F1D21;
+    padding: 60px 64px;
+    align-self: stretch;
+}
+
+.working__hour,
+.details__txt,
+.details__contact {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.details__phone,
+.details__email {
+    display: flex;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.map__right {
+    grid-area: 1/2/4/4;
+    width: 100%;
+    border: 0;
+}
+
+.map__right iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+@media screen and (max-width: 1920px) {
     .Our-Menu__cards {}
 
     .Our-Menu__card {
-        grid-column: span 6;
+        grid-column: span 2;
     }
 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 960px) {
     .Our-Menu {
         display: flex;
+        justify-content: space-around;
     }
 
-    .Our-Menu__cards {}
+    .Our-Menu__right-container {
+        margin-bottom: 80px;
+    }
+
+
+    .Our-Menu__main-title {
+        margin-top: 50px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+        margin-left: 10%;
+        font-size: 40px;
+    }
+
+    .Our-Menu__subtitle {
+        max-width: 300px;
+    }
 
     .Our-Menu__card {
         grid-column: span 6;
+    }
+
+    .Our-Menu__list {
+        display: block;
+        flex-wrap: wrap;
+        margin-bottom: 64px;
+        text-align: center;
+    }
+
+    .Our-Menu__card {
+        grid-column: span 3;
         margin-right: 0px;
 
     }
@@ -360,10 +465,37 @@ p {
 }
 
 @media screen and (max-width: 576px) {
-    .Our-Menu__cards {}
+    .Our-Menu {
+        display: block;
+    }
+
+    .Our-Menu__right-container {
+        margin-bottom: 80px;
+    }
+
+    .Our-Menu__main-link {
+        margin-bottom: 0px;
+        margin-left: 30%;
+    }
+
+    .Our-Menu__main-title {
+        margin-top: 50px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+        margin-left: 10%;
+        text-align: center;
+    }
 
     .Our-Menu__card {
-        grid-column: span 5;
+        grid-column: span 6;
     }
+
+    .Our-Menu__list {
+        display: block;
+        flex-wrap: wrap;
+        margin-bottom: 64px;
+        text-align: center;
+    }
+
 
 }

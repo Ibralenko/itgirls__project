@@ -472,6 +472,11 @@ p {
     margin-left: -10px;
 }
 
+/* .about-company__img-1::after {
+    content: url(/assets/img/jpg/about-company__2.jpg);
+    position: absolute;
+} */
+
 .about-company__container {
     display: flex;
     justify-content: space-between;
@@ -498,18 +503,25 @@ p {
         display: block;
     }
 
+    .about-company__title,
+    .about-company__subtitle {
+        margin: 20px auto;
+        text-align: center;
+    }
+
     .about-company__img-1 {
         Width: 240px;
         Height: 500px;
+        right: 20px;
         margin-top: 81px;
-        margin-left: 60px;
+        margin-left: auto;
     }
 
     .about-company__img-2 {
         position: absolute;
         width: 240px;
         height: 500px;
-        right: -70px;
+        right: -20px;
         top: 50px;
         border-radius: 0px;
         margin-bottom: 67px;
@@ -517,6 +529,10 @@ p {
 
     .about-company__left {
         text-align: center;
+        margin: auto;
+    }
+
+    .about-company__right {
         margin: auto;
     }
 }
@@ -553,6 +569,13 @@ p {
     align-items: center;
 }
 
+.what__wrapper {
+    max-width: 1278px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
 
 
 .what__logo {
@@ -564,13 +587,13 @@ p {
     margin-left: 20px;
 }
 
-.what__header_block1 {
+.abour__header_block1 {
     margin-right: 30px;
     width: 50%;
 
 }
 
-.what__header_block2 {
+.about__header_block2 {
     width: 50%;
     margin-right: 50px;
 }
@@ -708,8 +731,12 @@ p {
 }
 
 .menu__wrapper {
-    width: 100%;
+
+    max-width: 1278px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
+
 
 .menu__main {
     width: 100%;
@@ -758,6 +785,7 @@ p {
 
 .menu__header_block2 {
     width: 50%;
+    margin-left: 50px;
 }
 
 .menu__container {
@@ -939,9 +967,51 @@ p {
 };
 
 /*Our story start (Gulya)*/
-.story {
+.story__wrapper {
     max-width: 100%;
-    margin: 0px 0px 126px 0px;
+    <<<<<<< HEAD margin: 20px 0px 0px 0px;
+    max-width: 1278px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+
+
+.story__body {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.story__inscription {
+    margin: 95px 0px 0px 30px;
+}
+
+.story__subtitle {
+    margin-left: 30px;
+    margin-top: 0px;
+    height: 84px;
+    width: 515px;
+}
+
+.image_1 {
+    max-width: 240px;
+    max-height: 500px;
+    margin: 75px 0px 0px 30px;
+}
+
+.image_2 {
+    max-width: 240px;
+    max-height: 500px;
+    margin: -10px 0px 0px 30px;
+}
+
+.story__images {
+    display: flex;
+}
+
+.story__aside {
+    =======margin: 0px 0px 126px 0px;
 
 }
 
@@ -965,18 +1035,54 @@ p {
 }
 
 .story__aside {
-    display: flex;
+    >>>>>>>3685366dd90160c5a000d4274724cce84686d6fc display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 50%;
+    <<<<<<< HEAD
 }
 
 .story__article {
-    display: flex;
+    =======
+}
+
+.story__article {
+    >>>>>>>3685366dd90160c5a000d4274724cce84686d6fc display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 50%;
+    <<<<<<< HEAD justify-content: center;
 
+
+}
+
+.story__content {
+    display: flex;
+}
+
+
+.story__title {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 58px;
+    color: #ffffff;
+}
+
+.story__article_header {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #ffffff;
+    margin-top: -25px;
+
+
+}
+
+=======
 }
 
 .story__content {
@@ -995,6 +1101,7 @@ p {
     line-height: 125%;
 }
 
+>>>>>>>3685366dd90160c5a000d4274724cce84686d6fc
 /*Our story end (Gulya)*/
 
 
@@ -1153,15 +1260,14 @@ p {
     justify-content: center;
 }
 
-.footer__logo {
+<<<<<<< HEAD=======.footer__logo {
     max-width: 1278px;
     padding: 0 15px;
     margin: 0 auto;
     margin-bottom: 45px;
 }
 
-
-.footer__list {
+>>>>>>>3685366dd90160c5a000d4274724cce84686d6fc .footer__list {
     display: inline-flex;
     justify-content: center;
     list-style-type: none;
