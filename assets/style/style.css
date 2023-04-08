@@ -832,7 +832,8 @@ p {
 .quote__wrapper {
     display: flex;
     justify-content: center;
-
+    background-color: #1F1D21;
+    margin-bottom: 118px;
 }
 
 .quote__left-part {
@@ -901,6 +902,10 @@ p {
     position: absolute;
     top: 48%;
     left: 48%;
+}
+.quote__person-line {
+    opacity: 0.24;
+    width: 100%;
 }
 
 
