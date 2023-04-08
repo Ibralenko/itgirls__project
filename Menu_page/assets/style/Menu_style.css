@@ -294,15 +294,20 @@ p {
     transition: 0.2s all;
 }
 
-.Our-Menu__link:visited {
-    color: #fff;
+.first {
+    opacity: 10;
 }
 
+.Our-Menu__link:visited {
+    color: #fff;
+    opacity: 10;
+}
 
 .Our-Menu__cards {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 32px;
+    margin-bottom: 160px;
 }
 
 .Our-Menu__card {
@@ -313,6 +318,16 @@ p {
 .Our-Menu__card-pic {
     position: relative;
     max-width: 100%
+}
+
+.Our-Menu__image {
+    max-height: 100%;
+    width: 100%;
+    transition: 2s;
+}
+
+.Our-Menu__image:hover {
+    transform: scale(1.03);
 }
 
 .Our-Menu__info {
@@ -338,94 +353,76 @@ p {
     opacity: 0.87;
 }
 
-.footer__wrapper:hover {
-    border: 3px solid rgba(83, 23, 75, 0.829);
-}
-
-.footer__wrapper {
+.contact {
     box-sizing: border-box;
-    margin: 0 auto;
-    padding-top: 160px;
-    display: flex;
-    max-width: 100%;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.footer__logo {
+    display: grid;
     max-width: 1278px;
-    padding: 0 15px;
     margin: 0 auto;
-    margin-bottom: 45px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
-
-.footer__list {
-    display: inline-flex;
-    justify-content: center;
-    list-style-type: none;
-    padding-left: 0 32%;
-
+.contact__left {
+    grid-area: 1/1/4/2;
+    width: 100%;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    background: #1F1D21;
+    padding: 60px 64px;
+    align-self: stretch;
 }
 
-.footer__item {
-    margin: 0 40px;
-
+.working__hour,
+.details__txt,
+.details__contact {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
 }
 
-.footer__link {
+.details__phone,
+.details__email {
+    display: flex;
     color: #FFFFFF;
     text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
 }
 
-.footer__bottom:hover {
-    border-top: 3px solid rgba(119, 29, 158, 0.829);
+.map__right {
+    grid-area: 1/2/4/4;
+    width: 100%;
+    border: 0;
 }
 
-.footer__bottom {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    max-width: 100%;
-    padding: 0 8%;
-}
-
-.social_icons {
-    display: inline-flex;
-    padding-left: 0;
-    list-style-type: none;
-    text-decoration: none;
-    justify-content: center;
-}
-
-.icons__facebook,
-.icons__twitter,
-.icons__instagram,
-.icons__LinkedIn {
-    padding: 12px
-}
-
-.footer__container {
-    display: inline-flex;
-    margin: 0 40px;
-}
-
-.footer__arrow {
-    color: rgba(255, 181, 119, 1);
+.map__right iframe {
+    width: 100%;
+    height: 100%;
 }
 
 
 
-@media screen and (max-width: 1244px) {
+
+@media screen and (max-width: 1920px) {
     .Our-Menu__cards {}
 
     .Our-Menu__card {
-        grid-column: span 3;
+        grid-column: span 2;
     }
 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 960px) {
     .Our-Menu {
         display: flex;
         justify-content: space-around;
@@ -468,6 +465,10 @@ p {
 }
 
 @media screen and (max-width: 576px) {
+    .Our-Menu {
+        display: block;
+    }
+
     .Our-Menu__right-container {
         margin-bottom: 80px;
     }
