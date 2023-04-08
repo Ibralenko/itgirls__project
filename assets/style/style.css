@@ -553,6 +553,14 @@ p {
     align-items: center;
 }
 
+.what__wrapper {
+   
+        max-width: 1278px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+
 
 
 .what__logo {
@@ -564,13 +572,13 @@ p {
     margin-left: 20px;
 }
 
-.what__header_block1 {
+.abour__header_block1 {
     margin-right: 30px;
     width: 50%;
 
 }
 
-.what__header_block2 {
+.about__header_block2 {
     width: 50%;
     margin-right: 50px;
 }
@@ -708,8 +716,12 @@ p {
 }
 
 .menu__wrapper {
-    width: 100%;
-}
+    
+        max-width: 1278px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
 
 .menu__main {
     width: 100%;
@@ -758,6 +770,7 @@ p {
 
 .menu__header_block2 {
     width: 50%;
+    margin-left: 50px;
 }
 
 .menu__container {
@@ -906,11 +919,16 @@ p {
 
 
 /*Our story start (Gulya)*/
-.story {
+.story__wrapper {
     max-width: 100%;
-    margin: 0px 0px 126px 0px;
+    margin: 20px 0px 0px 0px;
+    max-width: 1278px;
+    margin: 0 auto;
+    padding: 0 15px;
+    }
+   
   
-  }
+  
   
   .story__body {
     max-width: 75%;
@@ -918,42 +936,69 @@ p {
   }
  
   .story__inscription {
-    margin: 86px 0px 7px 30px;
+    margin: 95px 0px 0px 30px;
+  }
+  .story__subtitle {
+    margin-left: 30px;
+    margin-top: 0px;
+    height: 84px;
+    width: 515px;
   }
   .image_1 {
-    max-width: 701px;
-    margin: 0px 0px 0px -153px;
+    max-width: 240px;
+    max-height: 500px;
+    margin: 75px 0px 0px 30px;
   }
   .image_2 {
-    max-width: 536px;
-    margin: -75px 0px 0px 87px;
+    max-width: 240px;
+    max-height: 500px;
+    margin: -10px 0px 0px 30px;
+  }
+  .story__images {
+    display: flex;
   }
   .story__aside {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 50%;
+    
   }
   .story__article {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 50%;
+    justify-content: center;
+    
     
   }
   .story__content {
     display: flex;
   }
-  .story__article__text1 {
-    margin: 199px 0px 156px 30px;
-  }
-  .story__article__text2 {
-    margin: 0px 0px 161px 80px;
-  }
-  .istory__article__text2 {
-    line-height: 125%;
-  }
   
+  
+  .story__title {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 58px;
+    color: #ffffff;
+  }
+
+  .story__article_header {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #ffffff;
+    margin-top: -25px;
+   
+    
+  }
+
 /*Our story end (Gulya)*/
 
 
@@ -1028,7 +1073,6 @@ p {
     justify-content: center;
 }
 
-.footer__logo {}
 
 .footer__list {
     display: inline-flex;
