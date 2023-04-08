@@ -892,6 +892,11 @@ p {
     opacity: 0.6;
 }
 
+.quote__person-line {
+    opacity: 0.24;
+    width: 100%;
+}
+
 .quote__right-part {
     max-width: 925px;
     max-height: 668px;
@@ -903,10 +908,7 @@ p {
     top: 48%;
     left: 48%;
 }
-.quote__person-line {
-    opacity: 0.24;
-    width: 100%;
-}
+
 
 
 
