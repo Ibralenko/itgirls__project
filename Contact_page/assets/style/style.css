@@ -217,140 +217,42 @@ p {
     }
 }
 
-/* =============== section */
-.Our-Menu {
-    display: flex;
-    justify-content: space-between;
-}
-
-.Our-menu__left-container {
-    display: block;
-    align-items: center;
-    margin-right: 75px;
-    margin-top: 96px;
-}
-
-.Our-Menu__main-link {
-    margin-right: 32px;
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFB577;
-    text-decoration: none;
-    margin-bottom: 24px;
-    position: relative;
-}
-
-.Our-Menu__main-link::after {
-    content: url(/assets/img/svg/Line.svg);
-    position: absolute;
-    right: -64px;
-    top: -6px;
-}
-
-.Our-Menu__main-title {
-    height: 136px;
-    font-family: "Playfair Display";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 68px;
-    color: #ffffff;
-    margin-bottom: 144px;
-    margin-right: 75px;
-}
-
-.Our-Menu__right-container {
-    margin-top: 168px;
-}
-
-.Our-Menu__subtitle {
-    max-height: 112px;
-    max-width: 499px;
-}
-
-.Our-Menu__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 64px;
-}
-
-.Our-Menu__item {
-    list-style-type: none;
-    margin-right: 40px;
-}
-
-.Our-Menu__link {
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    color: #FFFFFF;
-    opacity: 0.6;
-    text-decoration: none;
-    transition: 0.2s all;
-}
-
-.first {
-    opacity: 10;
-}
-
-.Our-Menu__link:visited {
-    color: #fff;
-    opacity: 10;
-}
-
-.Our-Menu__cards {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 32px;
+.Contact-form {
     margin-bottom: 160px;
 }
 
-.Our-Menu__card {
-    grid-column: span 2;
-    margin-bottom: 32px;
+.Contact-form__left-part {
+    width: 658px;
 }
 
-.Our-Menu__card-pic {
-    position: relative;
-    max-width: 100%
-}
-
-.Our-Menu__image {
-    max-height: 100%;
-    width: 100%;
-    transition: 2s;
-}
-
-.Our-Menu__image:hover {
-    transform: scale(1.03);
-}
-
-.Our-Menu__info {
-    position: absolute;
-    bottom: -40px;
-    left: 0;
-    width: 100%;
-    background-color: #1F1D21;
-}
-
-.Our-Menu__info-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.Our-Menu__title {
+.Contact-form__title {
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 48px;
+    line-height: 58px;
     color: #FFFFFF;
     opacity: 0.87;
+}
+
+.Contact-form__input {
+    height: 56px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    height: 56px;
+    width: 297px;
+    margin-right: 32px;
+    margin-bottom: 24px;
+    padding: 0;
+}
+
+.Contact-form__input:last-child {
+    margin-right: 0px;
+}
+
+.text {
+    text-align: center;
+    width: 623px;
 }
 
 .contact {
@@ -490,91 +392,4 @@ iframe {
 .footer__arrow {
     margin-left: 9px;
     color: rgba(255, 181, 119, 1);
-}
-
-@media screen and (max-width: 1920px) {
-    .Our-Menu__cards {}
-
-    .Our-Menu__card {
-        grid-column: span 2;
-    }
-
-}
-
-@media screen and (max-width: 960px) {
-    .Our-Menu {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .Our-Menu__right-container {
-        margin-bottom: 80px;
-    }
-
-
-    .Our-Menu__main-title {
-        margin-top: 50px;
-        margin-bottom: 0px;
-        margin-right: 0px;
-        margin-left: 10%;
-        font-size: 40px;
-    }
-
-    .Our-Menu__subtitle {
-        max-width: 300px;
-    }
-
-    .Our-Menu__card {
-        grid-column: span 6;
-    }
-
-    .Our-Menu__list {
-        display: block;
-        flex-wrap: wrap;
-        margin-bottom: 64px;
-        text-align: center;
-    }
-
-    .Our-Menu__card {
-        grid-column: span 3;
-        margin-right: 0px;
-
-    }
-
-}
-
-@media screen and (max-width: 576px) {
-    .Our-Menu {
-        display: block;
-    }
-
-    .Our-Menu__right-container {
-        margin-bottom: 80px;
-    }
-
-    .Our-Menu__main-link {
-        margin-bottom: 0px;
-        margin-left: 30%;
-    }
-
-    .Our-Menu__main-title {
-        margin-top: 50px;
-        margin-bottom: 0px;
-        margin-right: 0px;
-        margin-left: 10%;
-        text-align: center;
-    }
-
-    .Our-Menu__card {
-        grid-column: span 6;
-    }
-
-    .Our-Menu__list {
-        display: block;
-        flex-wrap: wrap;
-        margin-bottom: 64px;
-        text-align: center;
-    }
-
-
 }
