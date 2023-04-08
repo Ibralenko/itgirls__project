@@ -37,6 +37,7 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
     max-height: 80px;
+    margin-bottom: 96px;
 }
 
 .header__logo {
@@ -218,6 +219,8 @@ p {
 }
 
 .Contact-form {
+    margin-top: 96px;
+    display: flex;
     margin-bottom: 160px;
 }
 
@@ -253,6 +256,42 @@ p {
 .text {
     text-align: center;
     width: 623px;
+}
+
+.Contact-form__right-part {
+    display: flex;
+}
+
+.Contact-form__image-1 {
+    max-Width: 240px;
+    Height: 500px;
+    margin: 71px 0px 0px 30px;
+}
+
+.Contact-form__image-2 {
+    max-width: 240px;
+    height: 500px;
+    margin: 0px 0px 0px 67px;
+}
+
+.Contact-form__btn {
+    width: 213px;
+    height: 64px;
+    background: rgba(39, 37, 45, 1);
+    border: #27252D;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.Contact-form__btn:hover,
+.Contact-form__btn:focus,
+.Contact-form__btn:active {
+    opacity: 0.75;
 }
 
 .contact {
