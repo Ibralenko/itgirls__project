@@ -335,6 +335,84 @@ p {
     opacity: 0.87;
 }
 
+.footer__wrapper:hover {
+    border: 3px solid rgba(83, 23, 75, 0.829);
+}
+
+.footer__wrapper {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 160px;
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__logo {
+    max-width: 1278px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+
+
+.footer__list {
+    display: inline-flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 0 32%;
+
+}
+
+.footer__item {
+    margin: 0 40px;
+
+}
+
+.footer__link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer__bottom:hover {
+    border-top: 3px solid rgba(119, 29, 158, 0.829);
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    padding: 0 8%;
+}
+
+.social_icons {
+    display: inline-flex;
+    padding-left: 0;
+    list-style-type: none;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.icons__facebook,
+.icons__twitter,
+.icons__instagram,
+.icons__LinkedIn {
+    padding: 12px
+}
+
+.footer__container {
+    display: inline-flex;
+    margin: 0 40px;
+}
+
+.footer__arrow {
+    color: rgba(255, 181, 119, 1);
+}
+
+
+
 @media screen and (max-width: 1244px) {
     .Our-Menu__cards {}
 
@@ -346,10 +424,8 @@ p {
 
 @media screen and (max-width: 900px) {
     .Our-Menu {
-        display: flex;
+        display: block;
     }
-
-    .Our-Menu__cards {}
 
     .Our-Menu__card {
         grid-column: span 6;
