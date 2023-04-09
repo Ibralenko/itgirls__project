@@ -918,6 +918,7 @@ p {
     .quote__left-part {
         margin-left: 80px;
         margin-right: 39px;
+
     }
 
     .quote__text-words {
@@ -932,9 +933,58 @@ p {
         align-self: center;
     }
 }
-@media screen and (max-width:767px) {
-    
+@media screen and (min-width:400px) and (max-width:767px) {
+    .quote__wrapper {
+        display:block;
+    }
+
+    .quote__left-part {
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 100vw;
+    }
+
+    .quote__text-words {
+        font-size: 16px;
+    }
+
+    .quote__marks-sign {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+    .quote__person-face {
+        display: none;
+    }
+    .quote__video-button {
+        max-width: 36px;
 }
+}
+@media screen and (max-width:399px) {
+    .quote__wrapper {
+        display:block;
+    }
+
+    .quote__left-part {
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 100vw;
+    }
+
+    .quote__text-words {
+        font-size: 12px;
+    }
+
+    .quote__marks-sign {
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+    .quote__person-face {
+        display: none;
+    }
+    .quote__video-button {
+        max-width: 24px;
+}
+
 
 /*Our story start (Gulya)*/
 
