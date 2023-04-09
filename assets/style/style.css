@@ -903,6 +903,7 @@ p {
     top: 48%;
     left: 48%;
 }
+
 .quote__person-line {
     opacity: 0.24;
     width: 100%;
@@ -1157,10 +1158,11 @@ p {
 
 .footer__bottom {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     max-width: 100%;
     padding: 0 8%;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 .social_icons {
@@ -1184,6 +1186,7 @@ p {
 }
 
 .footer__arrow {
+    margin-left: 9px;
     color: rgba(255, 181, 119, 1);
 }
 
