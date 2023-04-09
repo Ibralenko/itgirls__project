@@ -918,7 +918,6 @@ p {
     }
 }
 
-<<<<<<< HEAD
  @media screen and (max-width:399px) {
   .quote__wrapper {
     display: block;
@@ -943,8 +942,6 @@ p {
     display: none;
 }
 
-=======
->>>>>>> 7e7e8a3ea4b16a37cccaeab976166acafa8a5da4
 @media screen and (max-width: 399px) {
     .quote__wrapper {
         display: block;
@@ -970,7 +967,7 @@ p {
     }
 }
 
-<<<<<<< HEAD
+
 /*Our story start (Gulya)*/
     .story__body {
 
@@ -1531,7 +1528,8 @@ p {
         color: rgba(255, 181, 119, 1);
     }
     /* About footer (Nadya) end */
-=======
+
+/*Part with Video END (Mila)*/
 
 
 /* About blog (Nadya) */
@@ -1650,13 +1648,13 @@ p {
 .details__phone,
 .details__email {
     display: flex;
-    <<<<<<< HEAD color: #FFFFFF;
+    color: #FFFFFF;
     text-decoration: none;
     font-family: 'Poppins';
-    =======color: #ffffff;
+    color: #ffffff;
     text-decoration: none;
     font-family: "Poppins";
-    >>>>>>>f8c58581de29b963e4a30b2f3336dc979a692608 font-style: normal;
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
@@ -1673,7 +1671,7 @@ p {
     height: 100%;
 }
 
-<<<<<<< HEAD=======>>>>>>>f8c58581de29b963e4a30b2f3336dc979a692608
+
 /* About footer (Nadya) */
 
 .footer__wrapper:hover {
@@ -1690,7 +1688,7 @@ p {
     justify-content: center;
 }
 
-<<<<<<< HEAD=======>>>>>>>f8c58581de29b963e4a30b2f3336dc979a692608 .footer__list {
+.footer__list {
     display: inline-flex;
     justify-content: center;
     list-style-type: none;
@@ -1698,18 +1696,14 @@ p {
 }
 
 .footer__item {
-    margin: 0 40px;
-    <<<<<<< HEAD
+    margin: 0 40px
 }
 
-.footer__link {
-    color: #FFFFFF;
-    =======
-}
+
 
 .footer__link {
     color: #ffffff;
-    >>>>>>>f8c58581de29b963e4a30b2f3336dc979a692608 text-decoration: none;
+    text-decoration: none;
 }
 
 .footer__bottom:hover {
@@ -1737,8 +1731,8 @@ p {
 .icons__twitter,
 .icons__instagram,
 .icons__LinkedIn {
-    <<<<<<< HEAD padding: 12px=======padding: 12px;
-    >>>>>>>f8c58581de29b963e4a30b2f3336dc979a692608
+     padding: 12px;
+    
 }
 
 .footer__container {
@@ -1749,9 +1743,4 @@ p {
 .footer__arrow {
     margin-left: 9px;
     color: rgba(255, 181, 119, 1);
-}
-
-/* About footer (Nadya) end */
-/* About footer (Nadya) end*/
->>>>>>>f8c58581de29b963e4a30b2f3336dc979a692608
->>>>>>> 44c65c2ca280577dc44843d0008a2fa79fd94553
+}}
