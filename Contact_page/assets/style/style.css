@@ -218,11 +218,16 @@ p {
     }
 }
 
-.Contact-form__container {
+.Contact-form {
     margin-top: 96px;
     display: flex;
     margin-bottom: 160px;
 }
+
+.Contact-form__container {
+    display: flex;
+}
+
 
 .Contact-form__left-part {
     width: 658px;
@@ -252,6 +257,8 @@ p {
     margin-right: 0px;
 }
 
+
+
 .text {
     Width:
         623px;
@@ -279,10 +286,7 @@ p {
     color: white;
 }
 
-.Contact-form__btn::after {
-    content: url(/Contact_page/assets/img/Arro-btn.svg);
-    margin-left: 9px;
-}
+
 
 .Contact-form__right-part {
     display: flex;
@@ -321,7 +325,9 @@ p {
 }
 
 
-@media screen and (max-width: 1200px) {
+
+
+@media screen and (max-width: 1100px) {
     .Contact-form__container {
         display: block;
     }
@@ -362,7 +368,147 @@ p {
             }
         }
     }
+
+    .contact {
+        box-sizing: border-box;
+        display: grid;
+        max-width: 1278px;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .contact__left {
+        grid-area: 1/1/4/2;
+        width: 100%;
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+        background: #1F1D21;
+        padding: 60px 64px;
+        align-self: stretch;
+    }
+
+    .working__hour,
+    .details__txt,
+    .details__contact {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+
+    .details__phone,
+    .details__email {
+        display: flex;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .map__right {
+        grid-area: 1/2/4/4;
+        width: 100%;
+        border: 0;
+    }
+
+    .map__right iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    iframe {
+        filter: grayscale(100%);
+    }
+
+
+    .footer__wrapper:hover {
+        border: 3px solid rgba(83, 23, 75, 0.829);
+    }
+
+    .footer__wrapper {
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding-top: 160px;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer__logo {
+        display: flex;
+        justify-content: center;
+        margin-left: 70px;
+    }
+
+    .footer__list {
+        display: inline-flex;
+        justify-content: center;
+        list-style-type: none;
+    }
+
+    .footer__item {
+        margin: 0 40px;
+
+    }
+
+    .footer__link {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .footer__bottom:hover {
+        border-top: 3px solid rgba(119, 29, 158, 0.829);
+    }
+
+    .footer__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        padding: 0 8%;
+        border-top: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .social_icons {
+        display: inline-flex;
+        padding-left: 0;
+        list-style-type: none;
+        text-decoration: none;
+        justify-content: center;
+    }
+
+    .icons__facebook,
+    .icons__twitter,
+    .icons__instagram,
+    .icons__LinkedIn {
+        padding: 12px
+    }
+
+    .footer__container {
+        display: inline-flex;
+        margin: 0 40px;
+    }
+
+    .footer__arrow {
+        margin-left: 9px;
+        color: rgba(255, 181, 119, 1);
+    }
 }
+
+/* About contact (Nadya) */
 
 .contact {
     box-sizing: border-box;
@@ -375,7 +521,7 @@ p {
 
 .contact__left {
     grid-area: 1/1/4/2;
-    width: 100%;
+    max-width: 100%;
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 700;
@@ -383,7 +529,7 @@ p {
     line-height: 30px;
     color: #FFFFFF;
     background: #1F1D21;
-    padding: 60px 64px;
+    padding: 60px;
     align-self: stretch;
 }
 
@@ -418,7 +564,6 @@ p {
 
 .map__right iframe {
     width: 100%;
-    height: 100%;
 }
 
 
@@ -426,6 +571,7 @@ iframe {
     filter: grayscale(100%);
 }
 
+/* About footer (Nadya) */
 
 .footer__wrapper:hover {
     border: 3px solid rgba(83, 23, 75, 0.829);
@@ -436,7 +582,6 @@ iframe {
     margin: 0 auto;
     padding-top: 160px;
     display: flex;
-    flex-wrap: wrap;
     max-width: 100%;
     flex-direction: column;
     justify-content: center;
@@ -452,6 +597,8 @@ iframe {
     display: inline-flex;
     justify-content: center;
     list-style-type: none;
+    padding: 0 20px;
+
 }
 
 .footer__item {
@@ -464,8 +611,8 @@ iframe {
     text-decoration: none;
 }
 
-.footer__bottom:hover {
-    border-top: 3px solid rgba(119, 29, 158, 0.829);
+a:hover {
+    color: #b8b8b8;
 }
 
 .footer__bottom {
@@ -476,6 +623,11 @@ iframe {
     padding: 0 8%;
     border-top: 1px solid rgba(255, 255, 255, 0.07);
 }
+
+.footer__bottom:hover {
+    border-top: 3px solid rgba(119, 29, 158, 0.829);
+}
+
 
 .social_icons {
     display: inline-flex;
@@ -500,4 +652,29 @@ iframe {
 .footer__arrow {
     margin-left: 9px;
     color: rgba(255, 181, 119, 1);
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer__list {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .footer__logo {
+        margin: 0 auto;
+    }
 }
