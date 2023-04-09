@@ -261,7 +261,6 @@ p {
     max-height: 136px;
     font-family: "Playfair Display";
     font-style: normal;
-    font-weight: 643px;
     font-size: 56px;
     line-height: 68px;
     color: #ffffff;
@@ -381,7 +380,6 @@ p {
 /*hero styles end*/
 
 /* About company styles start (Julia) */
-
 .about-company {
     margin-bottom: 160px;
     display: flex;
@@ -1237,7 +1235,7 @@ p {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(405px, 1fr));
             grid-template-rows: 15% 85%;
-            align-items: space-between;
+            align-items: center;
             gap: 32px;
             max-width: 1280px;
             width: 100%;
