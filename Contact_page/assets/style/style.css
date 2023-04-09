@@ -218,7 +218,7 @@ p {
     }
 }
 
-.Contact-form {
+.Contact-form__container {
     margin-top: 96px;
     display: flex;
     margin-bottom: 160px;
@@ -239,7 +239,6 @@ p {
 }
 
 .Contact-form__input {
-    height: 56px;
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.04);
     height: 56px;
@@ -254,8 +253,35 @@ p {
 }
 
 .text {
-    text-align: center;
-    width: 623px;
+    Width:
+        623px;
+    Height:
+        147px;
+    margin-bottom: 32px;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: white;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: white;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: white;
+}
+
+.Contact-form__btn::after {
+    content: url(/Contact_page/assets/img/Arro-btn.svg);
+    margin-left: 9px;
 }
 
 .Contact-form__right-part {
@@ -292,6 +318,50 @@ p {
 .Contact-form__btn:focus,
 .Contact-form__btn:active {
     opacity: 0.75;
+}
+
+
+@media screen and (max-width: 1360px) {
+    .Contact-form__container {
+        display: block;
+    }
+
+    .Contact-form__right-part {
+        margin: 40px auto;
+    }
+
+    @media screen and (max-width: 630px) {
+
+        .Contact-form__right-part {
+            display: block;
+        }
+
+        .Contact-form__image-1 {
+            margin: 40px 20%;
+        }
+
+        .Contact-form__image-2 {
+            margin: 40px 20%;
+        }
+
+        @media screen and (max-width: 576px) {
+            .Contact-form__left-part {
+                display: block;
+            }
+
+            .Contact-form__title {
+                font-size: 40px;
+            }
+
+            .Contact-form__left-part {
+                max-width: 400px;
+            }
+
+            .text {
+                max-width: 400px;
+            }
+        }
+    }
 }
 
 .contact {
