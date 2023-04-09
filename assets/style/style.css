@@ -918,30 +918,7 @@ p {
     }
 }
 
-<<<<<<< HEAD @media screen and (max-width:399px) .quote__wrapper {
-    display: block;
-}
-
-.quote__left-part {
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 100vw;
-}
-
-.quote__text-words {
-    font-size: 12px;
-}
-
-.quote__marks-sign {
-    font-size: 12px;
-    margin-bottom: 0px;
-}
-
-.quote__person-face {
-    display: none;
-}
-
-=======@media screen and (max-width: 399px) {
+@media screen and (max-width: 399px) {
     .quote__wrapper {
         display: block;
     }
@@ -963,14 +940,6 @@ p {
 
     .quote__person-face {
         display: none;
-    }
-
-    .quote__video-button {
-        max-width: 24px;
-    }
-
-    .quote__video-button {
-        max-width: 24px;
     }
 }
 
