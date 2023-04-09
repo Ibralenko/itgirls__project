@@ -836,11 +836,13 @@ p {
 .quote__left-part {
     margin-left: 160px;
     margin-right: 78px;
+    width: 100%;
     max-width: 674px;
     max-height: 668px;
 }
 
 .quote__marks-sign {
+    width: 100%;
     max-width: 34px;
     max-width: 35px;
     font-family: 'Poppins', sans-serif;
@@ -852,6 +854,7 @@ p {
 }
 
 .quote__text-words {
+    width: 100%;
     max-width: 436px;
     max-height: 288px;
     font-family: 'Playfair Display';
@@ -881,6 +884,7 @@ p {
 }
 
 .quote__person-name {
+    width: 100%;
     max-width: 113px;
     max-height: 24px;
 }
@@ -895,19 +899,42 @@ p {
 }
 
 .quote__right-part {
+    width: 100%;
     max-width: 925px;
     max-height: 668px;
+}
+
+.quote__right-part-video {
     position: relative;
 }
-
-.quote__right-part-poster {
+.quote__video-button {
     position: absolute;
-    top: 48%;
-    left: 48%;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
 }
 
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .quote__left-part {
+        margin-left: 80px;
+        margin-right: 39px;
+    }
 
+    .quote__text-words {
+        font-size: 16px;
+    }
 
+    .quote__marks-sign {
+        font-size: 36px;
+        margin-bottom: 0px;
+    }
+    .quote__right-part {
+        align-self: center;
+    }
+}
+@media screen and (max-width:767px) {
+    
+}
 
 /*Our story start (Gulya)*/
 
