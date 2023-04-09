@@ -321,7 +321,7 @@ p {
 }
 
 
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1200px) {
     .Contact-form__container {
         display: block;
     }
@@ -436,6 +436,7 @@ iframe {
     margin: 0 auto;
     padding-top: 160px;
     display: flex;
+    flex-wrap: wrap;
     max-width: 100%;
     flex-direction: column;
     justify-content: center;
@@ -451,8 +452,6 @@ iframe {
     display: inline-flex;
     justify-content: center;
     list-style-type: none;
-    padding-left: 0 32%;
-
 }
 
 .footer__item {

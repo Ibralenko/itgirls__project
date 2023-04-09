@@ -918,30 +918,32 @@ p {
     }
 }
 
-<<<<<<< HEAD @media screen and (max-width:399px) .quote__wrapper {
-    display: block;
+@media screen and (max-width:399px) {
+    .quote__wrapper {
+        display: block;
+    }
+
+    .quote__left-part {
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 100vw;
+    }
+
+    .quote__text-words {
+        font-size: 12px;
+    }
+
+    .quote__marks-sign {
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+
+    .quote__person-face {
+        display: none;
+    }
 }
 
-.quote__left-part {
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 100vw;
-}
-
-.quote__text-words {
-    font-size: 12px;
-}
-
-.quote__marks-sign {
-    font-size: 12px;
-    margin-bottom: 0px;
-}
-
-.quote__person-face {
-    display: none;
-}
-
-=======@media screen and (max-width: 399px) {
+@media screen and (max-width: 399px) {
     .quote__wrapper {
         display: block;
     }
@@ -1095,10 +1097,9 @@ p {
     <<<<<<< HEAD color: #FFFFFF;
     text-decoration: none;
     font-family: 'Poppins';
-    =======color: #ffffff;
+    color: #ffffff;
     text-decoration: none;
-    font-family: "Poppins";
-    >>>>>>>f8c58581de29b963e4a30b2f3336dc979a692608 font-style: normal;
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
@@ -1132,40 +1133,41 @@ p {
     justify-content: center;
 }
 
-<<<<<<< HEAD=======>>>>>>>f8c58581de29b963e4a30b2f3336dc979a692608 .footer__list {
+.footer__logo {
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+}
+
+.footer__list {
     display: inline-flex;
     justify-content: center;
     list-style-type: none;
-    padding-left: 0 32%;
 }
 
 .footer__item {
     margin: 0 40px;
-    <<<<<<< HEAD
+
 }
 
 .footer__link {
     color: #FFFFFF;
-    =======
+    text-decoration: none;
 }
 
-.footer__link {
-    color: #ffffff;
-    >>>>>>>f8c58581de29b963e4a30b2f3336dc979a692608 text-decoration: none;
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    padding: 0 8%;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 .footer__bottom:hover {
     border-top: 3px solid rgba(119, 29, 158, 0.829);
 }
 
-.footer__bottom {
-    display: flex;
-    align-items: center;
-    max-width: 100%;
-    padding: 0 8%;
-    justify-content: space-between;
-    border-top: 1px solid rgba(255, 255, 255, 0.07);
-}
 
 .social_icons {
     display: inline-flex;
@@ -1179,8 +1181,7 @@ p {
 .icons__twitter,
 .icons__instagram,
 .icons__LinkedIn {
-    <<<<<<< HEAD padding: 12px=======padding: 12px;
-    >>>>>>>f8c58581de29b963e4a30b2f3336dc979a692608
+    padding: 12px
 }
 
 .footer__container {
@@ -1194,5 +1195,3 @@ p {
 }
 
 /* About footer (Nadya) end */
-/* About footer (Nadya) end*/
->>>>>>>f8c58581de29b963e4a30b2f3336dc979a692608
