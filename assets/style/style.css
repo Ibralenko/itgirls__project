@@ -992,7 +992,7 @@ p {
     .quote__video-button {
         max-width: 24px;
     }
-
+        }
 
     /*Our story start (Gulya)*/
 
@@ -1002,6 +1002,7 @@ p {
         max-width: 1278px;
         margin: 0 auto;
         padding: 0 15px;
+        
     }
 
 
@@ -1224,6 +1225,7 @@ p {
             font-size: 32px;
             width: 200%;
         }
+    }
 
         /*Our story end (Gulya)*/
 
