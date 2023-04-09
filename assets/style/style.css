@@ -35,7 +35,7 @@ p {
     width: 164px;
     height: 48px;
     background: #ffb577;
-    border: #FFB577;
+    border: #ffb577;
     cursor: pointer;
 }
 
@@ -52,7 +52,6 @@ p {
 }
 
 /*  header styles start (Julia)*/
-
 
 .header {
     display: flex;
@@ -126,8 +125,7 @@ p {
     transition: 0.2s all;
 }
 
-
-@media (min-width:903px) {
+@media (min-width: 903px) {
     .hamburger-menu {
         display: none;
     }
@@ -185,17 +183,17 @@ p {
         position: absolute;
         width: 100%;
         height: 2px;
-        background-color: #FFC492;
-        transition-duration: .25s;
+        background-color: #ffc492;
+        transition-duration: 0.25s;
     }
 
     .menu__btn>span::before {
-        content: '';
+        content: "";
         top: -8px;
     }
 
     .menu__btn>span::after {
-        content: '';
+        content: "";
         top: 8px;
     }
 
@@ -210,8 +208,8 @@ p {
         padding: 80px 0;
         list-style: none;
         background-color: rgba(25, 22, 27, 1);
-        box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-        transition-duration: .25s;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+        transition-duration: 0.25s;
         z-index: 10;
     }
 
@@ -219,12 +217,12 @@ p {
         display: block;
         padding: 12px 24px;
         color: #fff;
-        font-family: 'Poppins';
+        font-family: "Poppins";
         font-size: 20px;
         font-weight: 600;
         text-decoration: none;
         text-align: center;
-        transition-duration: .25s;
+        transition-duration: 0.25s;
         z-index: 9;
     }
 
@@ -374,7 +372,6 @@ p {
     .hero__image {
         display: none;
     }
-
 }
 
 /*hero styles end*/
@@ -390,12 +387,12 @@ p {
 }
 
 .about-company__link {
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #FFB577;
+    color: #ffb577;
     text-decoration: none;
     margin-bottom: 24px;
     position: relative;
@@ -406,7 +403,6 @@ p {
     position: absolute;
     right: -64px;
     top: -6px;
-
 }
 
 .about-company__columns {
@@ -451,7 +447,6 @@ p {
     display: flex;
 }
 
-
 .about-company__right {
     max-height: 700px;
     max-width: 613px;
@@ -464,10 +459,9 @@ p {
 }
 
 .about-company__img-1 {
-    max-Width: 240px;
-    Height: 500px;
+    max-width: 240px;
+    height: 500px;
     margin: 71px 0px 0px 30px;
-
 }
 
 .about-company__container {
@@ -490,12 +484,10 @@ p {
     margin-left: 9px;
 }
 
-
 @media (max-width: 960px) {
     .about-company {
         display: block;
     }
-
 
     .about-company__left {
         text-align: center;
@@ -530,7 +522,6 @@ p {
 
 /* About company styles end (Julia) */
 
-
 /* What we are serving styles start (Gulya) */
 .about__header {
     display: flex;
@@ -542,9 +533,6 @@ p {
     margin: 0 auto;
     padding: 0 15px;
 }
-
-
-
 
 .what__logo {
     width: 48px;
@@ -558,7 +546,6 @@ p {
 .abour__header_block1 {
     margin-right: 30px;
     width: 50%;
-
 }
 
 .about__header_block2 {
@@ -580,12 +567,12 @@ p {
 }
 
 .what__link {
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #FFB577;
+    color: #ffb577;
     text-decoration: none;
     margin-bottom: 24px;
     position: relative;
@@ -597,16 +584,12 @@ p {
     align-items: center;
 }
 
-
 .what__main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 120px;
-
 }
-
-
 
 .about__logo {
     width: 48px;
@@ -615,7 +598,6 @@ p {
 
 .about {
     margin-left: 20px;
-
 }
 
 .about__header_block1 {
@@ -626,7 +608,6 @@ p {
 .about__header_block2 {
     margin-right: 30px;
     width: 50%;
-
 }
 
 .about__heaad_title {
@@ -636,9 +617,7 @@ p {
     font-size: 48px;
     line-height: 58px;
     color: #ffffff;
-
 }
-
 
 @media screen and (max-width: 750px) {
     .about__header {
@@ -647,13 +626,10 @@ p {
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
-
     }
 
     .what__container {
-
         justify-content: center;
-
     }
 
     .what__subtitle {
@@ -670,15 +646,11 @@ p {
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
 
     .what__main_block-text {
         margin-left: 60px;
         margin-right: 60px;
-
-
-
     }
 
     .what__main_block-3 {
@@ -687,8 +659,6 @@ p {
 }
 
 /* What we are serving styles end (Gulya) */
-
-
 
 /* Our menu styles start (Gulya) */
 
@@ -704,7 +674,6 @@ p {
     padding: 0 15px;
 }
 
-
 .menu__main {
     width: 100%;
     display: grid;
@@ -714,7 +683,6 @@ p {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
-
 }
 
 .menu__container {
@@ -723,17 +691,16 @@ p {
 }
 
 .menu__link {
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #FFB577;
+    color: #ffb577;
     text-decoration: none;
     margin-bottom: 24px;
     position: relative;
     margin-right: 10px;
-
 }
 
 .menu__header {
@@ -758,7 +725,6 @@ p {
 .menu__container {
     display: flex;
     width: 100%;
-
 }
 
 .menu_button {
@@ -773,7 +739,6 @@ p {
     margin-top: 3rem;
     margin-block: 3rem;
     cursor: pointer;
-
 }
 
 .menu_button:hover,
@@ -789,7 +754,6 @@ p {
     border: #ffb577;
     background-color: #ecc19e;
     border: #ffb577;
-
 }
 
 .menu__wrapper {
@@ -818,16 +782,11 @@ p {
 
 /* Our menu styles end (Gulya) */
 
-
-
-
-
-
 /*Part with Video (Mila)*/
 .quote__wrapper {
     display: flex;
     justify-content: center;
-    background-color: #1F1D21;
+    background-color: #1f1d21;
     margin-bottom: 118px;
 }
 
@@ -843,11 +802,11 @@ p {
     width: 100%;
     max-width: 34px;
     max-width: 35px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 72px;
     font-weight: normal;
     line-height: 128%;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-bottom: 43px;
 }
 
@@ -855,21 +814,19 @@ p {
     width: 100%;
     max-width: 436px;
     max-height: 288px;
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display";
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
     line-height: 48px;
-    color: #FFFFFF;
+    color: #ffffff;
     opacity: 0.87;
-
 }
 
 .quote__person {
     display: flex;
     justify-content: space-between;
 }
-
 
 .quote__person-face {
     border-bottom: 2px solid white;
@@ -878,7 +835,6 @@ p {
 .quote__person-name,
 .quote__person-place {
     margin: 0;
-
 }
 
 .quote__person-name {
@@ -913,11 +869,10 @@ p {
     cursor: pointer;
 }
 
-@media screen and (min-width:768px) and (max-width:1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .quote__left-part {
         margin-left: 80px;
         margin-right: 39px;
-
     }
 
     .quote__text-words {
@@ -934,7 +889,7 @@ p {
     }
 }
 
-@media screen and (min-width:400px) and (max-width:767px) {
+@media screen and (min-width: 400px) and (max-width: 767px) {
     .quote__wrapper {
         display: block;
     }
@@ -963,7 +918,7 @@ p {
     }
 }
 
-@media screen and (max-width:399px) {
+@media screen and (max-width: 399px) {
     .quote__wrapper {
         display: block;
     }
@@ -991,7 +946,6 @@ p {
         max-width: 24px;
     }
 
-
     /*Our story start (Gulya)*/
 
     .story__wrapper {
@@ -1001,7 +955,6 @@ p {
         margin: 0 auto;
         padding: 0 15px;
     }
-
 
     .story__body {
         max-width: 75%;
@@ -1019,7 +972,6 @@ p {
         width: 515px;
     }
 
-
     .image_1 {
         max-width: 240px;
         max-height: 500px;
@@ -1036,21 +988,17 @@ p {
         display: flex;
     }
 
-
     .story__article {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         width: 50%;
         justify-content: center;
-
-
     }
 
     .story__content {
         display: flex;
     }
-
 
     .story__title {
         font-family: "Playfair Display";
@@ -1069,8 +1017,6 @@ p {
         line-height: 58px;
         color: #ffffff;
         margin-top: -25px;
-
-
     }
 
     .story__aside {
@@ -1078,23 +1024,19 @@ p {
         flex-direction: column;
         align-items: flex-start;
         width: 50%;
-
     }
 
     @media screen and (max-width: 1150px) {
         .story__content {
             display: flex;
             flex-direction: column;
-            align-items: center
+            align-items: center;
         }
-
 
         .story__article {
             margin-top: 10%;
         }
-
     }
-
 
     @media screen and (min-width: 940px) and (max-width: 1070px) {
         .story__wrapper {
@@ -1116,7 +1058,6 @@ p {
         .story__content {
             display: flex;
             flex-direction: row;
-
         }
     }
 
@@ -1124,30 +1065,25 @@ p {
         .story__images {
             display: flex;
             flex-direction: column;
-
         }
 
         .story__aside {
             margin-left: 40%;
         }
 
-
         .story__subtitle {
             font-size: 24px;
         }
 
         .image_1 {
-
             min-width: 440px;
             min-height: 600px;
-
         }
 
         .image_2 {
             min-width: 440px;
             min-height: 600px;
             margin-top: 20px;
-
         }
 
         .story__inscription {
@@ -1172,270 +1108,253 @@ p {
         .story__article__text2 {
             font-size: 24px;
             width: 150%;
-
-
         }
     }
+}
 
-    @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
+    .story__aside {
+        margin-left: 70%;
+    }
 
-        .story__aside {
-            margin-left: 70%;
-        }
+    .story__subtitle {
+        font-size: 32px;
+    }
 
+    .image_1 {
+        min-width: 540px;
+        min-height: 700px;
+    }
 
-        .story__subtitle {
-            font-size: 32px;
-        }
+    .image_2 {
+        min-width: 540px;
+        min-height: 700px;
+        margin-top: 20px;
+    }
 
-        .image_1 {
+    .story__inscription {
+        margin-left: 50%;
+        width: 200%;
+    }
 
-            min-width: 540px;
-            min-height: 700px;
+    .story__header {
+        margin-left: 10%;
+        width: 200%;
+        margin-top: 5%;
+    }
 
-        }
+    .story__article__text1 {
+        font-size: 32px;
+        width: 200%;
+    }
 
-        .image_2 {
-            min-width: 540px;
-            min-height: 700px;
-            margin-top: 20px;
+    .story__article__text2 {
+        font-size: 32px;
+        width: 200%;
+    }
+}
 
-        }
+/*Our story end (Gulya)*/
 
-        .story__inscription {
-            margin-left: 50%;
-            width: 200%;
-        }
+/* About blog (Nadya) */
+.blog {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(405px, 1fr));
+    grid-template-rows: 15% 85%;
+    align-items: center;
+    gap: 32px;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 207px;
+}
 
-        .story__header {
-            margin-left: 10%;
-            width: 200%;
-            margin-top: 5%;
-        }
+.blog__title {
+    grid-area: 1/1/2/4;
+    width: 100%;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+}
 
-        .story__article__text1 {
-            font-size: 32px;
-            width: 200%;
-        }
+.blog__item1,
+.blog__item2,
+.blog__item3 {
+    box-sizing: border-box;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    max-width: 405px;
+    max-height: 526px;
+    background-color: #1f1d21;
+    justify-self: start;
+}
 
-        .story__article__text2 {
-            font-size: 32px;
-            width: 200%;
-        }
+.blog__item1__date,
+.blog__item2__date,
+.blog__item3__date,
+.blog__item1__about,
+.blog__item2__about,
+.blog__item3__about {
+    margin: 0;
+    padding: 32px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #b8b8b8;
+}
 
-        /*Our story end (Gulya)*/
+.blog__item1__txt,
+.blog__item2__txt,
+.blog__item3__txt {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #ffffff;
+    margin: 0;
+    padding: 8px 32px 0 32px;
+}
 
+.blog__image {
+    position: relative;
+    max-width: 405px;
+    margin: 0;
+    justify-self: end;
+}
 
+/* About contact (Nadya) */
+.contact {
+    box-sizing: border-box;
+    display: grid;
+    max-width: 1278px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
 
+.contact__left {
+    grid-area: 1/1/4/2;
+    width: 100%;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    background: #1f1d21;
+    padding: 60px 64px;
+    align-self: stretch;
+}
 
+.working__hour,
+.details__txt,
+.details__contact {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+}
 
-        /* About blog (Nadya) */
-        .blog {
-            box-sizing: border-box;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(405px, 1fr));
-            grid-template-rows: 15% 85%;
-            align-items: center;
-            gap: 32px;
-            max-width: 1280px;
-            width: 100%;
-            margin: 0 auto;
-            margin-bottom: 207px;
-        }
+.details__phone,
+.details__email {
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}
 
-        .blog__title {
-            grid-area: 1/1/2/4;
-            width: 100%;
-            font-family: 'Playfair Display';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 48px;
-            line-height: 58px;
-        }
+.map__right {
+    grid-area: 1/2/4/4;
+    width: 100%;
+    border: 0;
+}
 
-        .blog__item1,
-        .blog__item2,
-        .blog__item3 {
-            box-sizing: border-box;
-            display: flex;
-            flex: 1 1 auto;
-            flex-direction: column;
-            max-width: 405px;
-            max-height: 526px;
-            background-color: #1F1D21;
-            justify-self: start;
-        }
+.map__right iframe {
+    width: 100%;
+    height: 100%;
+}
 
-        .blog__item1__date,
-        .blog__item2__date,
-        .blog__item3__date,
-        .blog__item1__about,
-        .blog__item2__about,
-        .blog__item3__about {
-            margin: 0;
-            padding: 32px;
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 24px;
-            color: #B8B8B8;
-        }
+/* About footer (Nadya) */
 
-        .blog__item1__txt,
-        .blog__item2__txt,
-        .blog__item3__txt {
-            font-family: 'Playfair Display';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 48px;
-            color: #FFFFFF;
-            margin: 0;
-            padding: 8px 32px 0 32px;
-        }
+.footer__wrapper:hover {
+    border: 3px solid rgba(83, 23, 75, 0.829);
+}
 
-        .blog__image {
-            position: relative;
-            max-width: 405px;
-            margin: 0;
-            justify-self: end;
-        }
+.footer__wrapper {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 160px;
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.footer__list {
+    display: inline-flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 0 32%;
+}
 
+.footer__item {
+    margin: 0 40px;
+}
 
+.footer__link {
+    color: #ffffff;
+    text-decoration: none;
+}
 
-        /* About contact (Nadya) */
-        .contact {
-            box-sizing: border-box;
-            display: grid;
-            max-width: 1278px;
-            margin: 0 auto;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-        }
+.footer__bottom:hover {
+    border-top: 3px solid rgba(119, 29, 158, 0.829);
+}
 
-        .contact__left {
-            grid-area: 1/1/4/2;
-            width: 100%;
-            font-family: 'Playfair Display';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 30px;
-            color: #FFFFFF;
-            background: #1F1D21;
-            padding: 60px 64px;
-            align-self: stretch;
-        }
+.footer__bottom {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    padding: 0 8%;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
 
-        .working__hour,
-        .details__txt,
-        .details__contact {
-            font-family: 'Playfair Display';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 30px;
-            color: #FFFFFF;
-        }
+.social_icons {
+    display: inline-flex;
+    padding-left: 0;
+    list-style-type: none;
+    text-decoration: none;
+    justify-content: center;
+}
 
-        .details__phone,
-        .details__email {
-            display: flex;
-            color: #FFFFFF;
-            text-decoration: none;
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 28px;
-        }
+.icons__facebook,
+.icons__twitter,
+.icons__instagram,
+.icons__LinkedIn {
+    padding: 12px;
+}
 
-        .map__right {
-            grid-area: 1/2/4/4;
-            width: 100%;
-            border: 0;
-        }
+.footer__container {
+    display: inline-flex;
+    margin: 0 40px;
+}
 
-        .map__right iframe {
-            width: 100%;
-            height: 100%;
-        }
+.footer__arrow {
+    margin-left: 9px;
+    color: rgba(255, 181, 119, 1);
+}
 
-
-
-        /* About footer (Nadya) */
-
-        .footer__wrapper:hover {
-            border: 3px solid rgba(83, 23, 75, 0.829);
-        }
-
-        .footer__wrapper {
-            box-sizing: border-box;
-            margin: 0 auto;
-            padding-top: 160px;
-            display: flex;
-            max-width: 100%;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-
-        .footer__list {
-            display: inline-flex;
-            justify-content: center;
-            list-style-type: none;
-            padding-left: 0 32%;
-
-        }
-
-        .footer__item {
-            margin: 0 40px;
-
-        }
-
-        .footer__link {
-            color: #FFFFFF;
-            text-decoration: none;
-        }
-
-        .footer__bottom:hover {
-            border-top: 3px solid rgba(119, 29, 158, 0.829);
-        }
-
-        .footer__bottom {
-            display: flex;
-            align-items: center;
-            max-width: 100%;
-            padding: 0 8%;
-            justify-content: space-between;
-            border-top: 1px solid rgba(255, 255, 255, 0.07);
-        }
-
-        .social_icons {
-            display: inline-flex;
-            padding-left: 0;
-            list-style-type: none;
-            text-decoration: none;
-            justify-content: center;
-        }
-
-        .icons__facebook,
-        .icons__twitter,
-        .icons__instagram,
-        .icons__LinkedIn {
-            padding: 12px
-        }
-
-        .footer__container {
-            display: inline-flex;
-            margin: 0 40px;
-        }
-
-        .footer__arrow {
-            margin-left: 9px;
-            color: rgba(255, 181, 119, 1);
-        }
-
-        /* About footer (Nadya) end*/
+/* About footer (Nadya) end*/
