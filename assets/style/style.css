@@ -1336,16 +1336,13 @@ p {
 
     /*Our story end (Gulya)*/
 
-    <<<<<<< HEAD=======>>>>>>>f8c58581de29b963e4a30b2f3336dc979a69260=======>>>>>>>f8c58581de29b963e4a30b2f3336dc979a692608
-
     /* About blog (Nadya) */
     .blog {
         box-sizing: border-box;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(405px, 1fr));
         grid-template-rows: 15% 85%;
-        <<<<<<< HEAD align-items: space-between;
-        =======align-items: center;
+        align-items: center;
         gap: 32px;
         max-width: 1280px;
         width: 100%;
@@ -1357,8 +1354,8 @@ p {
         grid-area: 1/1/2/4;
         width: 100%;
         font-family: 'Playfair Display';
-        =======font-family: "Playfair Display";
-        >>>>>>>f8c58581de29b963e4a30b2f3336dc979a692608 font-style: normal;
+        font-family: "Playfair Display";
+        font-style: normal;
         font-weight: 700;
         font-size: 48px;
         line-height: 58px;
@@ -1373,9 +1370,8 @@ p {
         flex-direction: column;
         max-width: 405px;
         max-height: 526px;
-        <<<<<<< HEAD background-color: #1F1D21;
-        =======background-color: #1f1d21;
-        >>>>>>>f8c58581de29b963e4a30b2f3336dc979a692608 justify-self: start;
+        background-color: #1F1D21;
+        justify-self: start;
     }
 
     .blog__item1__date,
@@ -1386,29 +1382,24 @@ p {
     .blog__item3__about {
         margin: 0;
         padding: 32px;
-        <<<<<<< HEAD font-family: 'Poppins';
-        =======font-family: "Poppins";
-        >>>>>>>f8c58581de29b963e4a30b2f3336dc979a692608 font-style: normal;
+        font-family: 'Poppins';
+        font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
-        <<<<<<< HEAD color: #B8B8B8;
-        =======color: #b8b8b8;
-        >>>>>>>f8c58581de29b963e4a30b2f3336dc979a692608
+        color: #B8B8B8;
     }
 
     .blog__item1__txt,
     .blog__item2__txt,
     .blog__item3__txt {
         font-family: 'Playfair Display';
-        =======font-family: "Playfair Display";
-        >>>>>>>f8c58581de29b963e4a30b2f3336dc979a692608 font-style: normal;
+        font-style: normal;
         font-weight: 700;
         font-size: 32px;
         line-height: 48px;
         color: #FFFFFF;
-        =======color: #ffffff;
-        >>>>>>>f8c58581de29b963e4a30b2f3336dc979a692608 margin: 0;
+        margin: 0;
         padding: 8px 32px 0 32px;
     }
 
@@ -1435,32 +1426,27 @@ p {
     .contact__left {
         grid-area: 1/1/4/2;
         width: 100%;
-        <<<<<<< HEAD font-family: 'Playfair Display';
-        =======font-family: "Playfair Display";
-        >>>>>>>f8c58581de29b963e4a30b2f3336dc979a692608 font-style: normal;
+        font-family: 'Playfair Display';
+        font-style: normal;
         font-weight: 700;
         font-size: 20px;
         line-height: 30px;
-        <<<<<<< HEAD color: #FFFFFF;
-        background: #1F1D21;
-        =======color: #ffffff;
+        color: #ffffff;
         background: #1f1d21;
-        >>>>>>>f8c58581de29b963e4a30b2f3336dc979a692608 padding: 60px 64px;
+        padding: 60px 64px;
         align-self: stretch;
     }
 
     .working__hour,
     .details__txt,
     .details__contact {
-        <<<<<<< HEAD font-family: 'Playfair Display';
-        =======font-family: "Playfair Display";
-        >>>>>>>f8c58581de29b963e4a30b2f3336dc979a692608 font-style: normal;
+        font-family: 'Playfair Display';
+        font-family: "Playfair Display";
+        font-style: normal;
         font-weight: 700;
         font-size: 20px;
         line-height: 30px;
-        <<<<<<< HEAD color: #FFFFFF;
-        =======color: #ffffff;
-        >>>>>>>f8c58581de29b963e4a30b2f3336dc979a692608
+        color: #FFFFFF;
     }
 
     .details__phone,
