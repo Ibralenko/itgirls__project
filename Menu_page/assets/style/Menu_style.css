@@ -353,6 +353,9 @@ p {
     opacity: 0.87;
 }
 
+
+/* About contact (Nadya) */
+
 .contact {
     box-sizing: border-box;
     display: grid;
@@ -415,6 +418,7 @@ iframe {
     filter: grayscale(100%);
 }
 
+/* About footer (Nadya) */
 
 .footer__wrapper:hover {
     border: 3px solid rgba(83, 23, 75, 0.829);
@@ -454,10 +458,6 @@ iframe {
     text-decoration: none;
 }
 
-.footer__bottom:hover {
-    border-top: 3px solid rgba(119, 29, 158, 0.829);
-}
-
 .footer__bottom {
     display: flex;
     justify-content: space-between;
@@ -466,6 +466,11 @@ iframe {
     padding: 0 8%;
     border-top: 1px solid rgba(255, 255, 255, 0.07);
 }
+
+.footer__bottom:hover {
+    border-top: 3px solid rgba(119, 29, 158, 0.829);
+}
+
 
 .social_icons {
     display: inline-flex;
@@ -491,6 +496,8 @@ iframe {
     margin-left: 9px;
     color: rgba(255, 181, 119, 1);
 }
+
+/* About footer end (Nadya) */
 
 @media screen and (max-width: 1920px) {
     .Our-Menu__cards {}
