@@ -918,6 +918,7 @@ p {
     }
 }
 
+<<<<<<< HEAD
  @media screen and (max-width:399px) {
   .quote__wrapper {
     display: block;
@@ -942,6 +943,8 @@ p {
     display: none;
 }
 
+=======
+>>>>>>> 7e7e8a3ea4b16a37cccaeab976166acafa8a5da4
 @media screen and (max-width: 399px) {
     .quote__wrapper {
         display: block;
@@ -964,14 +967,6 @@ p {
 
     .quote__person-face {
         display: none;
-    }
-
-    .quote__video-button {
-        max-width: 24px;
-    }
-
-    .quote__video-button {
-        max-width: 24px;
     }
 }
 
