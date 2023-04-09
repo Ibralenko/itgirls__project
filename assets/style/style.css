@@ -918,74 +918,41 @@ p {
     }
 }
 
-<<<<<<< HEAD
-@media screen and (max-width:399px) .quote__wrapper {
+@media screen and (max-width:399px) {
+    .quote__wrapper {
     display: block;
-}
+    }
 
-.quote__left-part {
+    .quote__left-part {
     margin-left: 5px;
     margin-right: 5px;
     width: 100vw;
-}
+    }
 
 .quote__text-words {
     font-size: 12px;
-}
+    }
 
 .quote__marks-sign {
     font-size: 12px;
     margin-bottom: 0px;
-}
+    }
 
 .quote__person-face {
     display: none;
-}
-=======
-@media screen and (max-width: 399px) {
-    .quote__wrapper {
-        display: block;
     }
-
-    .quote__left-part {
-        margin-left: 5px;
-        margin-right: 5px;
-        width: 100vw;
-    }
-
-    .quote__text-words {
-        font-size: 12px;
-    }
-
-    .quote__marks-sign {
-        font-size: 12px;
-        margin-bottom: 0px;
-    }
-
-    .quote__person-face {
-        display: none;
-    }
-
     .quote__video-button {
         max-width: 24px;
     }
 
-    /*Our story start (Gulya)*/
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
-
-.quote__video-button {
-    max-width: 24px;
 }
-
-<<<<<<< HEAD
+/*Video Part END*/
 
 /*Our story start (Gulya)*/
-=======
     .story__body {
         max-width: 75%;
         margin: 0 auto;
     }
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
 
 .story__wrapper {
     max-width: 100%;
@@ -996,7 +963,6 @@ p {
 }
 
 
-<<<<<<< HEAD
 .story__body {
     max-width: 75%;
     margin: 0 auto;
@@ -1005,13 +971,11 @@ p {
 .story__inscription {
     margin: 95px 0px 0px 30px;
 }
-=======
     .image_1 {
         max-width: 240px;
         max-height: 500px;
         margin: 75px 0px 0px 30px;
     }
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
 
 .story__subtitle {
     margin-left: 30px;
@@ -1021,7 +985,6 @@ p {
 }
 
 
-<<<<<<< HEAD
 .image_1 {
     max-width: 240px;
     max-height: 500px;
@@ -1038,7 +1001,6 @@ p {
     display: flex;
 }
 
-=======
     .story__article {
         display: flex;
         flex-direction: column;
@@ -1046,7 +1008,6 @@ p {
         width: 50%;
         justify-content: center;
     }
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
 
 .story__article {
     display: flex;
@@ -1055,7 +1016,6 @@ p {
     width: 50%;
     justify-content: center;
 
-<<<<<<< HEAD
 
 }
 
@@ -1103,7 +1063,6 @@ p {
     margin-top: 10%;
 }
 
-=======
     .story__title {
         font-family: "Playfair Display";
         font-style: normal;
@@ -1146,7 +1105,6 @@ p {
         .story__wrapper {
             min-width: 1100px;
         }
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
 
 
 
@@ -1154,7 +1112,6 @@ p {
     min-width: 1100px;
 }
 
-<<<<<<< HEAD
 .story__content {
     margin-left: 10px;
     margin-right: 10px;
@@ -1170,7 +1127,6 @@ p {
 .story__content {
     display: flex;
     flex-direction: row;
-=======
         .story__content {
             display: flex;
             flex-direction: row;
@@ -1182,11 +1138,9 @@ p {
             display: flex;
             flex-direction: column;
         }
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
 
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 860px) .story__images {
     display: flex;
     flex-direction: column;
@@ -1206,7 +1160,6 @@ p {
 
     min-width: 440px;
     min-height: 600px;
-=======
         .story__subtitle {
             font-size: 24px;
         }
@@ -1221,7 +1174,6 @@ p {
             min-height: 600px;
             margin-top: 20px;
         }
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
 
 }
 
@@ -1237,7 +1189,6 @@ p {
     width: 150%;
 }
 
-<<<<<<< HEAD
 .story__article {
     margin-left: 50%;
 }
@@ -1300,7 +1251,6 @@ p {
 .story__article__text2 {
     font-size: 32px;
     width: 200%;
-=======
         .story__article__text2 {
             font-size: 24px;
             width: 150%;
@@ -1348,29 +1298,22 @@ p {
         font-size: 32px;
         width: 200%;
     }
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
 }
 
 /*Our story end (Gulya)*/
 
-<<<<<<< HEAD
 
 
 
 
-=======
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
 /* About blog (Nadya) */
 .blog {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(405px, 1fr));
     grid-template-rows: 15% 85%;
-<<<<<<< HEAD
     align-items: space-between;
-=======
     align-items: center;
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
     gap: 32px;
     max-width: 1280px;
     width: 100%;
@@ -1381,11 +1324,8 @@ p {
 .blog__title {
     grid-area: 1/1/2/4;
     width: 100%;
-<<<<<<< HEAD
     font-family: 'Playfair Display';
-=======
     font-family: "Playfair Display";
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -1401,11 +1341,8 @@ p {
     flex-direction: column;
     max-width: 405px;
     max-height: 526px;
-<<<<<<< HEAD
     background-color: #1F1D21;
-=======
     background-color: #1f1d21;
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
     justify-self: start;
 }
 
@@ -1417,39 +1354,27 @@ p {
 .blog__item3__about {
     margin: 0;
     padding: 32px;
-<<<<<<< HEAD
     font-family: 'Poppins';
-=======
     font-family: "Poppins";
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-<<<<<<< HEAD
     color: #B8B8B8;
-=======
     color: #b8b8b8;
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
 }
 
 .blog__item1__txt,
 .blog__item2__txt,
 .blog__item3__txt {
-<<<<<<< HEAD
     font-family: 'Playfair Display';
-=======
     font-family: "Playfair Display";
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 48px;
-<<<<<<< HEAD
     color: #FFFFFF;
-=======
     color: #ffffff;
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
     margin: 0;
     padding: 8px 32px 0 32px;
 }
@@ -1461,12 +1386,9 @@ p {
     justify-self: end;
 }
 
-<<<<<<< HEAD
 
 
 
-=======
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
 /* About contact (Nadya) */
 .contact {
     box-sizing: border-box;
@@ -1480,22 +1402,16 @@ p {
 .contact__left {
     grid-area: 1/1/4/2;
     width: 100%;
-<<<<<<< HEAD
     font-family: 'Playfair Display';
-=======
     font-family: "Playfair Display";
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
-<<<<<<< HEAD
     color: #FFFFFF;
     background: #1F1D21;
-=======
     color: #ffffff;
     background: #1f1d21;
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
     padding: 60px 64px;
     align-self: stretch;
 }
@@ -1503,34 +1419,25 @@ p {
 .working__hour,
 .details__txt,
 .details__contact {
-<<<<<<< HEAD
     font-family: 'Playfair Display';
-=======
     font-family: "Playfair Display";
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
-<<<<<<< HEAD
     color: #FFFFFF;
-=======
     color: #ffffff;
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
 }
 
 .details__phone,
 .details__email {
     display: flex;
-<<<<<<< HEAD
     color: #FFFFFF;
     text-decoration: none;
     font-family: 'Poppins';
-=======
     color: #ffffff;
     text-decoration: none;
     font-family: "Poppins";
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1548,11 +1455,8 @@ p {
     height: 100%;
 }
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
 /* About footer (Nadya) */
 
 .footer__wrapper:hover {
@@ -1569,10 +1473,7 @@ p {
     justify-content: center;
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
 .footer__list {
     display: inline-flex;
     justify-content: center;
@@ -1582,18 +1483,15 @@ p {
 
 .footer__item {
     margin: 0 40px;
-<<<<<<< HEAD
 
 }
 
 .footer__link {
     color: #FFFFFF;
-=======
 }
 
 .footer__link {
     color: #ffffff;
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
     text-decoration: none;
 }
 
@@ -1622,11 +1520,8 @@ p {
 .icons__twitter,
 .icons__instagram,
 .icons__LinkedIn {
-<<<<<<< HEAD
     padding: 12px
-=======
     padding: 12px;
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
 }
 
 .footer__container {
@@ -1639,8 +1534,5 @@ p {
     color: rgba(255, 181, 119, 1);
 }
 
-<<<<<<< HEAD
 /* About footer (Nadya) end */
-=======
 /* About footer (Nadya) end*/
->>>>>>> f8c58581de29b963e4a30b2f3336dc979a692608
