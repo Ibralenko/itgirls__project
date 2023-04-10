@@ -1237,7 +1237,7 @@ iframe {
         display: flex;
         justify-content: center;
         margin: 0 auto;
-        padding: 0 auto;
+        padding: 0 20px;
         font-size: 30px;
     }
 
