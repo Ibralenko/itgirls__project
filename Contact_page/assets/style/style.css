@@ -257,6 +257,10 @@ p {
     margin-right: 0px;
 }
 
+.Contact-form__btn::after {
+    content: url(/assets/img/svg/Arrow-black.svg);
+    margin-left: 9px;
+}
 
 
 .text {

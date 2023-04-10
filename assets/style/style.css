@@ -782,6 +782,8 @@ p {
 
 /* Our menu styles end (Gulya) */
 
+/* Our menu styles end (Gulya) */
+
 /*Part with Video (Mila)*/
 .quote__wrapper {
     display: flex;
@@ -791,11 +793,11 @@ p {
 }
 
 .quote__left-part {
+    width: 100%;
+    max-width: 436px;
+    max-height: 668px;
     margin-left: 160px;
     margin-right: 78px;
-    width: 100%;
-    max-width: 674px;
-    max-height: 668px;
 }
 
 .quote__marks-sign {
