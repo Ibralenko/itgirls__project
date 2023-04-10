@@ -1044,7 +1044,7 @@ p {
     justify-self: end;
 }
 
-
+/* About blog (Nadya) end */
 
 
 /* About contact (Nadya) */
@@ -1104,7 +1104,7 @@ p {
     border: 0;
 }
 
-
+/* About contact (Nadya) end*/
 
 .story__inscription {
     margin-left: 50%;
@@ -1132,7 +1132,6 @@ p {
 
 .map__right iframe {
     width: 100%;
-    height: 100%;
 }
 
 iframe {
@@ -1165,11 +1164,7 @@ iframe {
     display: inline-flex;
     justify-content: center;
     list-style-type: none;
-}
-
-.footer__item {
-    margin: 0 40px;
-
+    padding: 0 20px;
 }
 
 .footer__item {
@@ -1221,11 +1216,55 @@ iframe {
     color: rgba(255, 181, 119, 1);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1250px) {
     .contact {
         display: flex;
         flex-direction: column;
-        margin: 0;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .blog {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .blog__title {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 auto;
+        font-size: 30px;
+    }
+
+    .blog__item1__txt {
+        font-size: 30px;
+    }
+
+    .blog__item2__txt {
+        font-size: 30px;
+    }
+
+    .blog__item3__txt {
+        font-size: 30px;
+    }
+
+    .contact__left {
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
         padding: 0;
     }
 
@@ -1242,6 +1281,13 @@ iframe {
     .footer__logo {
         margin: 0 auto;
     }
+
+    .blog {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
 }
 
 /* About footer (Nadya) end */
